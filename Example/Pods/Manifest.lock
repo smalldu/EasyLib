@@ -1,0 +1,16 @@
+PODS:
+  - EasyLib (0.1.0)
+
+DEPENDENCIES:
+  - EasyLib (from `../`)
+
+EXTERNAL SOURCES:
+  EasyLib:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  EasyLib: 313eb6e54d98d69dde08e7eccd3eee608938d29a
+
+PODFILE CHECKSUM: 3e4fc2ec57a5bbdcc0c823b0780ed76841e22bee
+
+COCOAPODS: 1.5.3

@@ -29,7 +29,7 @@
 
 /* Begin PBXFileReference section */
 		006C0AB63E50A91A3C75CFE3 /* Pods_EasyLib_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EasyLib_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		021E812179E20AC120D9A1C7 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		021E812179E20AC120D9A1C7 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		05BA003183ED630829D5D3FB /* Pods-EasyLib_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyLib_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EasyLib_Tests/Pods-EasyLib_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		381C6B97DE09CA3EE601D802 /* Pods-EasyLib_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyLib_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-EasyLib_Tests/Pods-EasyLib_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* EasyLib_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EasyLib_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -42,9 +42,9 @@
 		607FACE51AFB9204008FA782 /* EasyLib_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EasyLib_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		7E62EC02D5EE63A0766599CA /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		7E62EC02D5EE63A0766599CA /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		85BB76E8E51F2B45FE868795 /* Pods-EasyLib_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyLib_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-EasyLib_Example/Pods-EasyLib_Example.release.xcconfig"; sourceTree = "<group>"; };
-		9910A504B88C7BA7E064B8E0 /* EasyLib.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = EasyLib.podspec; path = ../EasyLib.podspec; sourceTree = "<group>"; };
+		9910A504B88C7BA7E064B8E0 /* EasyLib.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = EasyLib.podspec; path = ../EasyLib.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		C4AB3AF506520252C0513BC4 /* Pods_EasyLib_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EasyLib_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF2D3508CF9B4F91FC171A2A /* Pods-EasyLib_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyLib_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EasyLib_Example/Pods-EasyLib_Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -212,6 +212,7 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = Z45HS99LZ7;
 						LastSwiftMigration = 0900;
 					};
 					607FACE41AFB9204008FA782 = {
@@ -469,7 +470,9 @@
 			baseConfigurationReference = DF2D3508CF9B4F91FC171A2A /* Pods-EasyLib_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = Z45HS99LZ7;
 				INFOPLIST_FILE = EasyLib/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
@@ -484,7 +487,9 @@
 			baseConfigurationReference = 85BB76E8E51F2B45FE868795 /* Pods-EasyLib_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = Z45HS99LZ7;
 				INFOPLIST_FILE = EasyLib/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";

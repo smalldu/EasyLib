@@ -1,0 +1,6 @@
+framework module EasyLib {
+  umbrella header "EasyLib-umbrella.h"
+
+  export *
+  module * { export * }
+}
