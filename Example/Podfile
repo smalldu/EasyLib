@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'EasyLib_Example' do
+  pod 'EasyLib', :path => '../'
+
+  target 'EasyLib_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
