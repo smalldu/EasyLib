@@ -10,63 +10,104 @@ import UIKit
 import EasyLib
 
 
+public typealias AttributedString = NSMutableAttributedString
 
-struct Style {
+public protocol StyleProtocol: class {
   
-  enum `Type` {
-    case string
-    case label
-    case button
+  var attributes: [NSAttributedString.Key : Any] { get }
+  
+  func set(to source: String, range: NSRange?) -> AttributedString
+  
+  @discardableResult
+  func set(to source: AttributedString, range: NSRange?) -> AttributedString
+  
+  @discardableResult
+  func remove(from source: AttributedString, range: NSRange?) -> AttributedString
+}
+
+
+public extension StyleProtocol {
+  
+  func set(to source: String, range: NSRange?) -> AttributedString {
+    let attributedText = AttributedString(string: source)
+    attributedText.addAttributes(self.attributes, range: (range ?? NSMakeRange(0, attributedText.length)))
+    return attributedText
   }
   
-  let type: Type
-  let textColor: UIColor
-  let font: UIFont
+  @discardableResult
+  func set(to source: AttributedString, range: NSRange?) -> AttributedString {
+    source.addAttributes(self.attributes, range: (range ?? NSMakeRange(0, source.length)))
+    return source
+  }
   
-  init(_ textColor: UIColor, font: UIFont,type: Type = .string) {
-    self.type = type
-    self.textColor = textColor
-    self.font = font
-    
+  @discardableResult
+  func remove(from source: AttributedString, range: NSRange?) -> AttributedString {
+    self.attributes.keys.forEach({
+      source.removeAttribute($0, range: (range ?? NSMakeRange(0, source.length)))
+    })
+    return source
   }
   
 }
 
 
 
-struct Styles {
-  static let title = Style(UIColor(rgb: 0x333333), font: .mediumOf(15), type: .label)
+class Style: StyleProtocol {
+  
+  var attributes: [NSAttributedString.Key : Any] {
+    return innerAttributes
+  }
+  
+  
+  public typealias StyleInitHandler = ((Style) -> (Void))
+  
+  // 用来存储 attribute
+  private var innerAttributes: [NSAttributedString.Key : Any] = [:]
+  
+  init(_ handler: StyleInitHandler? = nil) {
+    handler?(self)
+  }
+  
+  var color: UIColor? {
+    set { self.set(attribute: newValue, forKey: .foregroundColor) }
+    get { return self.get(attributeForKey: .foregroundColor) }
+  }
+  
+  var font: UIFont? {
+    set { self.set(attribute: newValue, forKey: .font) }
+    get { return self.get(attributeForKey: .font) }
+  }
+  
+  
+  
+  // 设置 attribute
+  public func set<T>(attribute value: T?, forKey key: NSAttributedString.Key) {
+    guard let value = value else {
+      self.innerAttributes.removeValue(forKey: key)
+      return
+    }
+    self.innerAttributes[key] = value
+  }
+  
+  public func get<T>(attributeForKey key: NSAttributedString.Key) -> T? {
+    return (self.innerAttributes[key] as? T)
+  }
   
 }
+
+
 
 extension UILabel {
-  
-  func set(style: Style) {
-    self.textColor = style.textColor
-    
-  }
+
   
   
 }
-
-
-
-
-
-
-
-
-
-
-
 
 class ViewController: UIViewController {
   
   override func viewDidLoad() {
     super.viewDidLoad()
     view.isUserInteractionEnabled = true
-    
-    
     
   }
 }
