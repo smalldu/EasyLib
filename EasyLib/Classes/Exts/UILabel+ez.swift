@@ -7,6 +7,9 @@
 
 import UIKit
 
+
+// MARK: - about font and textColor
+
 public extension Auto where Base: UILabel {
   
   public func regular(size: CGFloat,color: UIColor?){
@@ -29,6 +32,4 @@ public extension Auto where Base: UILabel {
     self.base.font = UIFont.semiboldOf(size)
   }
 }
-
-
 
