@@ -268,7 +268,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-EasyLib_Example/Pods-EasyLib_Example-frameworks.sh",
+				"${SRCROOT}/Pods/Target Support Files/Pods-EasyLib_Example/Pods-EasyLib_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/EasyLib/EasyLib.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -277,7 +277,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EasyLib_Example/Pods-EasyLib_Example-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EasyLib_Example/Pods-EasyLib_Example-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		A695F4713ECDB60835B5F48F /* [CP] Check Pods Manifest.lock */ = {
