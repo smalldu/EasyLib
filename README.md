@@ -7,7 +7,48 @@
 
 ## Example
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+日常总结了些便利的方法，为了方便在切换项目的时候依然使用到他们。所以写了这个`EasyLib`。 
+
+### 更方便的方式使用 `Gesture`
+
+```swift
+view.ez.taped { (gesture) in
+  print("点击")
+}
+```
+
+如果需要配置下： 
+
+```swift
+view.ez.configTap { (gesuter) in
+  gesuter.numberOfTapsRequired = 2
+}.event { (gesture) in
+
+}
+```
+
+还支持一些其他类型的手势 
+
+```swift
+view.ez.paned { (panGesture) in
+
+}
+
+view.ez.configPan { (panGesutre) in
+
+}.event { (panGesutre) in
+
+}
+```
+`longPress` 、`swip` 的用法类似 
+
+
+
+### 其他工具类 
+
+`App.appName` 、`App.appBuild` 、 `App.appVersion` 、 `App.IDFA` 可以方便的获取到`App`的一些信息 
+
+
 
 ## Requirements
 

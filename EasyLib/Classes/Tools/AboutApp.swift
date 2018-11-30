@@ -31,10 +31,6 @@ public struct App {
     return Bundle.main.infoDictionary!["CFBundleName"] as! String
   }
   
-  public static var appStoreURL: URL {
-    return URL(string: "https://itunes.apple.com/cn/app/zuber-zhuan-ye-zhao-shi-you/id1035547502?mt=8")!
-  }
-  
   public static var appVersionAndBuild: String {
     let version = appVersion, build = appBuild
     return version == build ? "v\(version)" : "v\(version)(\(build))"
