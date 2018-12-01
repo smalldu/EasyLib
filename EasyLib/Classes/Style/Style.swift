@@ -23,7 +23,6 @@ public class Style: StyleProtocol {
     return innerAttributes
   }
   
-  
   public typealias StyleInitHandler = ((Style) -> (Void))
   
   // 用来存储 attribute
@@ -48,39 +47,59 @@ public class Style: StyleProtocol {
     get { return self.get(attributeForKey: .backgroundColor) }
   }
   
-  public var underline: (style: NSUnderlineStyle?, color: UIColor?)? {
+  public var underline: NSUnderlineStyle? {
     set {
-      self.set(attribute: NSNumber.from(underlineStyle: newValue?.style), forKey: .underlineStyle)
+      self.set(attribute: newValue?.rawValue, forKey: .underlineStyle)
       self.set(attribute: newValue, forKey: .underlineColor)
     }
     get {
-      let style: NSNumber? = self.get(attributeForKey: .underlineStyle)
-      let color: UIColor? = self.get(attributeForKey: .underlineColor)
-      return (style?.toUnderlineStyle(),color)
+      let style: Int? = self.get(attributeForKey: .underlineStyle)
+      return NSUnderlineStyle(rawValue: style ?? 0)
     }
   }
   
-  public var stroke: (color: UIColor?, width: Float?)? {
+  public var underlineColor: UIColor? {
     set {
-      self.set(attribute: newValue, forKey: .strokeColor)
-      self.set(attribute: NSNumber.from(float: newValue?.width), forKey: .strokeWidth)
+      self.set(attribute: newValue, forKey: .underlineColor)
     }
     get {
-      let color: UIColor? = self.get(attributeForKey: .strokeColor)
-      let width: NSNumber? = self.get(attributeForKey: .strokeWidth)
-      return (color,width?.floatValue)
+      return self.get(attributeForKey: .underlineColor)
     }
   }
   
-  public var strikethrough: (style: NSUnderlineStyle?, color: UIColor?)? {
+  public var strokeColor: UIColor? {
     set {
-      self.set(attribute: NSNumber.from(underlineStyle: newValue?.style), forKey: .strikethroughStyle)
+      self.set(attribute: newValue, forKey: .strokeColor)
+    }
+    get {
+      return self.get(attributeForKey: .strokeColor)
+    }
+  }
+  
+  public var strokeWidth: CGFloat? {
+    set {
+      self.set(attribute: newValue, forKey: .strokeWidth)
+    }
+    get {
+      return self.get(attributeForKey: .strokeWidth)
+    }
+  }
+  
+  public var strike: Int? {
+    set {
+      self.set(attribute: newValue, forKey: .strikethroughStyle)
+    }
+    get {
+      return self.get(attributeForKey: .strikethroughStyle)
+    }
+  }
+  
+  public var strikeColor: UIColor? {
+    set {
       self.set(attribute: newValue, forKey: .strikethroughColor)
     }
     get {
-      let style: NSNumber? = self.get(attributeForKey: .strikethroughStyle)
-      let color: UIColor? = self.get(attributeForKey: .strikethroughColor)
-      return (style?.toUnderlineStyle(),color)
+      return self.get(attributeForKey: .strikethroughColor)
     }
   }
   
@@ -188,11 +207,6 @@ public class Style: StyleProtocol {
     get {
       return self.get(attributeForKey: .shadow)
     }
-  }
-  
-  public var linkURL: URL? {
-    set { self.set(attribute: newValue, forKey: .link) }
-    get { return self.get(attributeForKey: .link) }
   }
   
   // 设置 attribute
