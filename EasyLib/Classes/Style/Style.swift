@@ -7,16 +7,6 @@
 
 import UIKit
 
-
-
-public enum Ligatures: Int {
-  case disabled = 0
-  case defaults = 1
-  #if os(OSX)
-  case all = 2
-  #endif
-}
-
 public class Style: StyleProtocol {
   
   public var attributes: [NSAttributedString.Key : Any] {
@@ -103,14 +93,6 @@ public class Style: StyleProtocol {
     }
   }
   
-  public var baselineOffset: Float? {
-    set { self.set(attribute: NSNumber.from(float: newValue), forKey: .baselineOffset) }
-    get {
-      let value: NSNumber? = self.get(attributeForKey: .baselineOffset)
-      return value?.floatValue
-    }
-  }
-  
   public var paragraph: NSMutableParagraphStyle {
     set {
       self.set(attribute: newValue, forKey: .paragraphStyle)
@@ -188,16 +170,6 @@ public class Style: StyleProtocol {
   public var hyphenationFactor: Float {
     set { self.paragraph.hyphenationFactor = newValue }
     get { return self.paragraph.hyphenationFactor }
-  }
-  
-  public var ligatures: Ligatures? {
-    set {
-      self.set(attribute: NSNumber.from(int: newValue?.rawValue), forKey: .ligature)
-    }
-    get {
-      guard let value: NSNumber = self.get(attributeForKey: .ligature) else { return nil }
-      return Ligatures(rawValue: value.intValue)
-    }
   }
   
   public var shadow: NSShadow? {

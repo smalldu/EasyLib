@@ -7,41 +7,41 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		02C5F2548B2F8778EAF40737849F5D7A /* Array+ez.swift in Sources */ = {isa = PBXBuildFile; fileRef = 898296025369B8D5502EB6D6684D7925 /* Array+ez.swift */; };
-		03615728F9913EF2864598F8F0E895C4 /* StyleProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6AF53FF3E3A61B466F4835EF7DB04FC /* StyleProtocol.swift */; };
-		04E354C0AAC764FBCCDEDA4DD2F59B60 /* UITextField+ez.swift in Sources */ = {isa = PBXBuildFile; fileRef = B5C207BD12F6F7DAC6CAE32C39E6A167 /* UITextField+ez.swift */; };
-		0B0578325B2F659B6CE62B58B5CDE045 /* Delayable.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE5B4B3118013F9912AB6B667E7287C /* Delayable.swift */; };
-		111A05B8680B3CDDF11442CDD2D5AF69 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38A244E4538E4E064FD1441331BB4D54 /* Extensions.swift */; };
-		11BCC83BACF73CAC4C553FEA3AA242DF /* AutoKeyboards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DF9043CE02D1080A154271BC387F466 /* AutoKeyboards.swift */; };
-		15DCF5EE1778643BB969733E45A2A8E1 /* UITextView+ez.swift in Sources */ = {isa = PBXBuildFile; fileRef = D353296E993CBD37DC29F97941AF23EB /* UITextView+ez.swift */; };
+		048BF4298263D7304CA5F6C9A392A407 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7298232BBECE49192BE657F65070C4 /* Extensions.swift */; };
+		1309D3216F51BACFAF463A11103E79F1 /* Date+ez.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60B6EE3CD308E2BA2BD43AF1DBECF8C5 /* Date+ez.swift */; };
 		1AA13D834D552BF28ECE0C6847E79B4C /* Pods-EasyLib_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C7675FC1050E11A698DCFE32C11D043 /* Pods-EasyLib_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1B001D2AF56E284AE59F9BC1D50769B8 /* UITableView+ez.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD53026B6FC13BEB30FF4060B0FB9C6A /* UITableView+ez.swift */; };
-		1DE53BAAAB0EEF6319297BE5DDA035D7 /* UIGesture+ez.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89A2C574299B9710E1C44FE20A6C5815 /* UIGesture+ez.swift */; };
-		267E41E221B1849A003AA1FE /* UIKit+Exts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267E41E121B1849A003AA1FE /* UIKit+Exts.swift */; };
-		2681F85498A02BE3DEEF85BE8696EDF7 /* Date+ez.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C2FC21EC363BFA510F6533FDD7B89BC /* Date+ez.swift */; };
-		293A14D45ABDD85CB998E5D6CA214550 /* EasyLib-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = BE040DA89F575EE898C2C9444EB67F9D /* EasyLib-dummy.m */; };
-		2C00FDC6476D117F88AC9D69FC457D97 /* UIColor+ez.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB94D374D9038BADA17BD6C23DEAEEBD /* UIColor+ez.swift */; };
-		392D573B334EF12B0AD7179B328A1CC5 /* UIDevice+ez.swift in Sources */ = {isa = PBXBuildFile; fileRef = E50742105FC09161C962E3EC68C8C6B0 /* UIDevice+ez.swift */; };
+		1B8C44B1E8D3F02B0656EB8D8C879004 /* Path.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9503A5EAB5D7CBF6E3CE1032F7D74D19 /* Path.swift */; };
+		218A8C0908821C2344381F4057E0BCEB /* StyleProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2854E73936DD39932C0E39E3E1FD150 /* StyleProtocol.swift */; };
+		3B698C798E1FAD413220C81253289ACE /* EasyLib-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 02CE9D29CAF00953BB8D678C61B12B4B /* EasyLib-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		438FA18DF416BD1690EF76446C53AAE8 /* EazyCompatible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C99E55EC0D208D27DE0DEBB8852F696 /* EazyCompatible.swift */; };
+		4A8BB7D56651400703619BF38B3CD38C /* Data+ez.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CB4734A9ABF83EA00ACFF9A9AAD6214 /* Data+ez.swift */; };
 		4C59B0AB1133A87F43D7A806995E3208 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
-		5776FC86018E431FF46183EF4D0193DD /* AboutApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AC57C4C242F4C4B2F4C988117E83917 /* AboutApp.swift */; };
-		5877BB0A9210E2EA0260E47436D87305 /* UINib+ez.swift in Sources */ = {isa = PBXBuildFile; fileRef = 057FF828CA00551C67A316889CF887E1 /* UINib+ez.swift */; };
+		55A94A43B445B16C6CD75D6549A03CD9 /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D8036DCC5EE29866F1E0723C3152F1F /* Style.swift */; };
+		5640594C4B8C6762768DEBE1D32F1DB6 /* AboutApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F94776DDA7A141F66ADA89E76D22B17 /* AboutApp.swift */; };
 		58A2F756872426F39039E6431AF4CB26 /* Pods-EasyLib_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DBB00E1410C5214DEE2FF7523676FBA2 /* Pods-EasyLib_Tests-dummy.m */; };
-		66034BD093F0E998C8D8AA24F564FFFF /* Data+ez.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F3BA8915BFE31C97B1339BC1D7EDBA2 /* Data+ez.swift */; };
-		661F3BD19530E76ECE393E067CBBB95A /* EasyLib-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0EC6E711D0A0538A83829C480719C52D /* EasyLib-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6217500ADA0C79E98B13036350B196F1 /* UILabel+ez.swift in Sources */ = {isa = PBXBuildFile; fileRef = 525F3B0DC815C88DB4215A10D5C8ED58 /* UILabel+ez.swift */; };
 		695367533C23473DA84A977D37B95854 /* Pods-EasyLib_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 8ED74149842DCADFE95980B7A52F061B /* Pods-EasyLib_Example-dummy.m */; };
-		74BE9E5BF70814BAE12E29DDF5C1BFF2 /* UIButton+ez.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7500378866B037243E75C612125668 /* UIButton+ez.swift */; };
-		89C8F4DE9E2B67AFDE0734A01F365E0A /* EazyCompatible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D919241A9595FBE0394D3C0BAE60E42 /* EazyCompatible.swift */; };
-		9F4F2B9387D84526340875CAF8BD15B7 /* UIImage+ez.swift in Sources */ = {isa = PBXBuildFile; fileRef = F996DE5DCBB0D4CE29E29B8DDE4384C8 /* UIImage+ez.swift */; };
-		A4CD4D983C7332EDD2F6AF201BA711C8 /* Path.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A136066A7665624DDBF7A9D516B3F41 /* Path.swift */; };
-		AB4EAD15C12989F6A29985FDB3D4064B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
-		C34934F8B372FEA2C92583D457033069 /* Delegated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 479A3F3382C51FF962B3A034C51805A6 /* Delegated.swift */; };
-		E36B9AA972880CD7896CEF66DA4067F0 /* UILabel+ez.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2627DF94B42B38A456C8A220BCA09BEF /* UILabel+ez.swift */; };
-		E961746355A9F2A96A011455B143DADA /* UIView+ez.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21E0228BE867D231E57E9FB8B85A5D18 /* UIView+ez.swift */; };
+		6D53895CCB9B655432385C17D8F4B141 /* UIGesture+ez.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7185BF37980A4CB256B8778FE8963C4C /* UIGesture+ez.swift */; };
+		71A4412998AFF93963D7AB82AA8572E5 /* UIButton+ez.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E69FE20E429DDA4144A5E4975803916 /* UIButton+ez.swift */; };
+		7F2805CE6AE1EBF5908FBB572F6F26F1 /* Delayable.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD7117FB80646DF12EC18F78E2E6B66 /* Delayable.swift */; };
+		95C6A0EC13B8EF1192FE737AA5006E17 /* UINib+ez.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0028C08B593C368FFB167FBF91317A9 /* UINib+ez.swift */; };
+		97EFA5CE077B3FADD8EDBC9B003C4051 /* UIImage+ez.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0FAC4EB981A1E9CD103A3FAB4A21E10 /* UIImage+ez.swift */; };
+		9A262E1D3851BAAC54D62979C6B37C69 /* UITextField+ez.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B4DB207C4618CAC5CBE2CC31AD3FA89 /* UITextField+ez.swift */; };
+		9FF222F2B4739484996E91B0DBA6E328 /* Delegated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1623CDF1655B98D2B79C645D26646D60 /* Delegated.swift */; };
+		A1851DBF6C2713B1711E850A78E520B7 /* String+version.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06F55B9802B2E180B2C81B7FE192F42F /* String+version.swift */; };
+		B50976C7C82B099B7E9AE877A3A5B44E /* UIFont+ez.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04A6B4A8117A77038A664641B97AABC3 /* UIFont+ez.swift */; };
+		BC4A4BF2CD6B3CB1DD9271D7ACF4353B /* Array+ez.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3B2A238F1180557114A4C378D43DA745 /* Array+ez.swift */; };
+		CACBC3C5254DAA1CEAD7A556301723D0 /* UITextView+ez.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4550D5C8CA45B4397B42525E12C21EC /* UITextView+ez.swift */; };
+		D0441BE9DDDCC31563CA965392A6EDD0 /* UIColor+ez.swift in Sources */ = {isa = PBXBuildFile; fileRef = E43A1BD8338BE7F381F2EF39672D0A91 /* UIColor+ez.swift */; };
+		D36B981B766DD22E7AF72D25837AFF51 /* UIKit+Exts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0104BFCBE190416349A6C683CCFBF291 /* UIKit+Exts.swift */; };
+		D38899DCDB37825D19496DD1DEB5DF6C /* UIDevice+ez.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D17832D90E12F8F10E0CBF0EAF09C29 /* UIDevice+ez.swift */; };
+		D58CE55C211DBC4AD0A83F2013832CF4 /* UIView+ez.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1EE70C9B263DAF6A84A7B5790D75542 /* UIView+ez.swift */; };
+		DB395B30ABE4F36F368DB31545E91802 /* UITableView+ez.swift in Sources */ = {isa = PBXBuildFile; fileRef = 529AC80B34D9FE93EB63647C11222DF3 /* UITableView+ez.swift */; };
+		E0283673E2647A933B509A6168F9F761 /* EasyLib-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E071C472BDA6E5EB039689C16B8BFA8 /* EasyLib-dummy.m */; };
 		EADCD0F691AA1B587A7AFB07357495C2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
-		EC4818E2EDE469956FA964D26AF0D846 /* UIFont+ez.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6930C5D7C4E3295C653E1B8999C784D8 /* UIFont+ez.swift */; };
-		FBACAC463100D7682242EA25FB3E8AAE /* String+version.swift in Sources */ = {isa = PBXBuildFile; fileRef = 902C6F3516CB4DEF82F7D4216313CD8E /* String+version.swift */; };
+		F25087B799FCE64FAA5E0FEC658AD424 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */; };
+		FA58A40F35B5C8E85E3511AE4E205E26 /* AutoKeyboards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28589A87BC89B981335B054BEFEC0E15 /* AutoKeyboards.swift */; };
 		FD1B24CC668E7AB0A1407BE23A2ED58F /* Pods-EasyLib_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = EFF06B7F0281D5DB280CEE05CF29DFB2 /* Pods-EasyLib_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FF39073931C34A7DB6749FF232ECA2F1 /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1519F08C629147F98ADC84662F9FF1C /* Style.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,7 +49,7 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = C383910D4135C7388BEAE9D9A8A692E8;
+			remoteGlobalIDString = 15F84C791C09D451DC4B9EFC7BECF762;
 			remoteInfo = EasyLib;
 		};
 		7024C4DB6CA6218159DFD4C4DFD50297 /* PBXContainerItemProxy */ = {
@@ -62,74 +62,74 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0076727CEFB3A7424D30B71A60697C3C /* Pods_EasyLib_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EasyLib_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		02D0DCF2E48B92F167DD6BCF6176E066 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		057FF828CA00551C67A316889CF887E1 /* UINib+ez.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UINib+ez.swift"; sourceTree = "<group>"; };
-		0C2FC21EC363BFA510F6533FDD7B89BC /* Date+ez.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Date+ez.swift"; sourceTree = "<group>"; };
-		0EC6E711D0A0538A83829C480719C52D /* EasyLib-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EasyLib-umbrella.h"; sourceTree = "<group>"; };
-		0F3BA8915BFE31C97B1339BC1D7EDBA2 /* Data+ez.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Data+ez.swift"; sourceTree = "<group>"; };
-		1B3FD39FA7E26D7D118CB62D0D3FEB51 /* Pods_EasyLib_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EasyLib_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0076727CEFB3A7424D30B71A60697C3C /* Pods_EasyLib_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_EasyLib_Tests.framework; path = "Pods-EasyLib_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0104BFCBE190416349A6C683CCFBF291 /* UIKit+Exts.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIKit+Exts.swift"; sourceTree = "<group>"; };
+		02CE9D29CAF00953BB8D678C61B12B4B /* EasyLib-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EasyLib-umbrella.h"; sourceTree = "<group>"; };
+		04A6B4A8117A77038A664641B97AABC3 /* UIFont+ez.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIFont+ez.swift"; sourceTree = "<group>"; };
+		06F55B9802B2E180B2C81B7FE192F42F /* String+version.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "String+version.swift"; sourceTree = "<group>"; };
+		0C7298232BBECE49192BE657F65070C4 /* Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		0C7FA399A62FC1FF52AB36988F9686AE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		12B56BBF0CC8B20E5840BACBB0DC005E /* EasyLib.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = EasyLib.modulemap; sourceTree = "<group>"; };
+		1323F09644C2A617AD00DF16B32614B1 /* EasyLib.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = EasyLib.xcconfig; sourceTree = "<group>"; };
+		1623CDF1655B98D2B79C645D26646D60 /* Delegated.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Delegated.swift; sourceTree = "<group>"; };
+		1B3FD39FA7E26D7D118CB62D0D3FEB51 /* Pods_EasyLib_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_EasyLib_Example.framework; path = "Pods-EasyLib_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1D1428D10C7D602FB5074499ADF591E9 /* Pods-EasyLib_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-EasyLib_Example-resources.sh"; sourceTree = "<group>"; };
 		1D6BA8865D0678234EFC3F661FD25AD8 /* Pods-EasyLib_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-EasyLib_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		21E0228BE867D231E57E9FB8B85A5D18 /* UIView+ez.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIView+ez.swift"; sourceTree = "<group>"; };
-		2627DF94B42B38A456C8A220BCA09BEF /* UILabel+ez.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UILabel+ez.swift"; sourceTree = "<group>"; };
-		267E41E121B1849A003AA1FE /* UIKit+Exts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIKit+Exts.swift"; sourceTree = "<group>"; };
-		2D919241A9595FBE0394D3C0BAE60E42 /* EazyCompatible.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EazyCompatible.swift; sourceTree = "<group>"; };
-		2DF9043CE02D1080A154271BC387F466 /* AutoKeyboards.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AutoKeyboards.swift; sourceTree = "<group>"; };
+		1E071C472BDA6E5EB039689C16B8BFA8 /* EasyLib-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "EasyLib-dummy.m"; sourceTree = "<group>"; };
+		28589A87BC89B981335B054BEFEC0E15 /* AutoKeyboards.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AutoKeyboards.swift; sourceTree = "<group>"; };
+		2D17832D90E12F8F10E0CBF0EAF09C29 /* UIDevice+ez.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIDevice+ez.swift"; sourceTree = "<group>"; };
 		2EBB1DFF7B85529E92782C26E1E0A14A /* Pods-EasyLib_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EasyLib_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		38A244E4538E4E064FD1441331BB4D54 /* Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
-		3A136066A7665624DDBF7A9D516B3F41 /* Path.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Path.swift; sourceTree = "<group>"; };
-		3AC57C4C242F4C4B2F4C988117E83917 /* AboutApp.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AboutApp.swift; sourceTree = "<group>"; };
+		3B2A238F1180557114A4C378D43DA745 /* Array+ez.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Array+ez.swift"; sourceTree = "<group>"; };
+		3F94776DDA7A141F66ADA89E76D22B17 /* AboutApp.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AboutApp.swift; sourceTree = "<group>"; };
 		44ED403AA8CEE40412018CF0CFBCBF75 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		479A3F3382C51FF962B3A034C51805A6 /* Delegated.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Delegated.swift; sourceTree = "<group>"; };
+		4A4BE0D17F5A79E4EA8A5F00A339E563 /* EasyLib-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EasyLib-prefix.pch"; sourceTree = "<group>"; };
 		4C7675FC1050E11A698DCFE32C11D043 /* Pods-EasyLib_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-EasyLib_Example-umbrella.h"; sourceTree = "<group>"; };
+		4C99E55EC0D208D27DE0DEBB8852F696 /* EazyCompatible.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = EazyCompatible.swift; sourceTree = "<group>"; };
+		525F3B0DC815C88DB4215A10D5C8ED58 /* UILabel+ez.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UILabel+ez.swift"; sourceTree = "<group>"; };
+		529AC80B34D9FE93EB63647C11222DF3 /* UITableView+ez.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UITableView+ez.swift"; sourceTree = "<group>"; };
 		543C86E3723847F6C3FCC7E287650278 /* Pods-EasyLib_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-EasyLib_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		55550B345A289C827DDC5A7BAF4288A4 /* EasyLib.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = EasyLib.modulemap; sourceTree = "<group>"; };
+		58DD8B0376C96361DEABB29D5F948D6F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
 		5A16F4CFC63FAC439D7A04994F579A03 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS11.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		5CB4734A9ABF83EA00ACFF9A9AAD6214 /* Data+ez.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Data+ez.swift"; sourceTree = "<group>"; };
 		5CD55D492A98E6D9CCE3E590C6C9093F /* Pods-EasyLib_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-EasyLib_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		6930C5D7C4E3295C653E1B8999C784D8 /* UIFont+ez.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIFont+ez.swift"; sourceTree = "<group>"; };
-		6AF1B07D31D2E6BC174B851597EBC4FB /* EasyLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = EasyLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6E7500378866B037243E75C612125668 /* UIButton+ez.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIButton+ez.swift"; sourceTree = "<group>"; };
+		60B6EE3CD308E2BA2BD43AF1DBECF8C5 /* Date+ez.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Date+ez.swift"; sourceTree = "<group>"; };
+		6AF1B07D31D2E6BC174B851597EBC4FB /* EasyLib.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = EasyLib.framework; path = EasyLib.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		711916831D2C9DB6C82504C4E8B8162A /* Pods-EasyLib_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-EasyLib_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		7185BF37980A4CB256B8778FE8963C4C /* UIGesture+ez.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIGesture+ez.swift"; sourceTree = "<group>"; };
 		71B51F2CA9E13F2FD0F56BA5AB7A41EB /* Pods-EasyLib_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-EasyLib_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		71DB978BDF6082E0F6932B123CFE46AB /* EasyLib-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EasyLib-prefix.pch"; sourceTree = "<group>"; };
+		7B4DB207C4618CAC5CBE2CC31AD3FA89 /* UITextField+ez.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UITextField+ez.swift"; sourceTree = "<group>"; };
+		7D8036DCC5EE29866F1E0723C3152F1F /* Style.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
 		7ED4A35238F48818B8B929C1192567C7 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7FD40F87FBEFF712AAF50EEEE6490E9B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		898296025369B8D5502EB6D6684D7925 /* Array+ez.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "Array+ez.swift"; sourceTree = "<group>"; };
-		89A2C574299B9710E1C44FE20A6C5815 /* UIGesture+ez.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIGesture+ez.swift"; sourceTree = "<group>"; };
 		8DF67B8858EEA7A444156A473396BB35 /* Pods-EasyLib_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EasyLib_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		8ED74149842DCADFE95980B7A52F061B /* Pods-EasyLib_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-EasyLib_Example-dummy.m"; sourceTree = "<group>"; };
-		902C6F3516CB4DEF82F7D4216313CD8E /* String+version.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "String+version.swift"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		94DEC45B4C1BA0DF456B22CA07556590 /* Pods-EasyLib_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EasyLib_Example.release.xcconfig"; sourceTree = "<group>"; };
+		9503A5EAB5D7CBF6E3CE1032F7D74D19 /* Path.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Path.swift; sourceTree = "<group>"; };
+		9E69FE20E429DDA4144A5E4975803916 /* UIButton+ez.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIButton+ez.swift"; sourceTree = "<group>"; };
 		B3C0E8AE0A7DE79675B9F2AB3F98EA6E /* Pods-EasyLib_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-EasyLib_Tests-resources.sh"; sourceTree = "<group>"; };
-		B5C207BD12F6F7DAC6CAE32C39E6A167 /* UITextField+ez.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UITextField+ez.swift"; sourceTree = "<group>"; };
-		B6AF53FF3E3A61B466F4835EF7DB04FC /* StyleProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StyleProtocol.swift; sourceTree = "<group>"; };
 		B9302E5AF7C8CA5614C5E5CF0BEFE231 /* Pods-EasyLib_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-EasyLib_Tests.modulemap"; sourceTree = "<group>"; };
-		BB94D374D9038BADA17BD6C23DEAEEBD /* UIColor+ez.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIColor+ez.swift"; sourceTree = "<group>"; };
-		BBE5B4B3118013F9912AB6B667E7287C /* Delayable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Delayable.swift; sourceTree = "<group>"; };
-		BD53026B6FC13BEB30FF4060B0FB9C6A /* UITableView+ez.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UITableView+ez.swift"; sourceTree = "<group>"; };
-		BE040DA89F575EE898C2C9444EB67F9D /* EasyLib-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "EasyLib-dummy.m"; sourceTree = "<group>"; };
+		C0028C08B593C368FFB167FBF91317A9 /* UINib+ez.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UINib+ez.swift"; sourceTree = "<group>"; };
+		C05ACD9AB3E76A331E4ACB8B2DB143B6 /* EasyLib.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; path = EasyLib.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		C1EE70C9B263DAF6A84A7B5790D75542 /* UIView+ez.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIView+ez.swift"; sourceTree = "<group>"; };
 		C466BFEE12605E4D51B53FDD3304F2BF /* Pods-EasyLib_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-EasyLib_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		D17963A360D13FE1F23620E134AE8E31 /* EasyLib.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = EasyLib.xcconfig; sourceTree = "<group>"; };
-		D353296E993CBD37DC29F97941AF23EB /* UITextView+ez.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UITextView+ez.swift"; sourceTree = "<group>"; };
 		D91B31AD7EF45351BAE2679467258276 /* Pods-EasyLib_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-EasyLib_Example.modulemap"; sourceTree = "<group>"; };
+		DAD7117FB80646DF12EC18F78E2E6B66 /* Delayable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Delayable.swift; sourceTree = "<group>"; };
 		DBB00E1410C5214DEE2FF7523676FBA2 /* Pods-EasyLib_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-EasyLib_Tests-dummy.m"; sourceTree = "<group>"; };
-		E1519F08C629147F98ADC84662F9FF1C /* Style.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
-		E50742105FC09161C962E3EC68C8C6B0 /* UIDevice+ez.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIDevice+ez.swift"; sourceTree = "<group>"; };
+		E0FAC4EB981A1E9CD103A3FAB4A21E10 /* UIImage+ez.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIImage+ez.swift"; sourceTree = "<group>"; };
+		E43A1BD8338BE7F381F2EF39672D0A91 /* UIColor+ez.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIColor+ez.swift"; sourceTree = "<group>"; };
+		E5D3B2A3390CE71AC51DC6692DD90A45 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
 		EFF06B7F0281D5DB280CEE05CF29DFB2 /* Pods-EasyLib_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-EasyLib_Tests-umbrella.h"; sourceTree = "<group>"; };
-		F4563357F73C27BEAF9AB72D5D180737 /* EasyLib.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; path = EasyLib.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		F2854E73936DD39932C0E39E3E1FD150 /* StyleProtocol.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StyleProtocol.swift; sourceTree = "<group>"; };
+		F4550D5C8CA45B4397B42525E12C21EC /* UITextView+ez.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UITextView+ez.swift"; sourceTree = "<group>"; };
 		F7B9DC0ABD40DF51F03149211E5D44C0 /* Pods-EasyLib_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-EasyLib_Example-frameworks.sh"; sourceTree = "<group>"; };
-		F9860C8A3336A54C4AC984B0945C09D2 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		F996DE5DCBB0D4CE29E29B8DDE4384C8 /* UIImage+ez.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIImage+ez.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		38F56A30987D672BDB3B3655435BB6F5 /* Frameworks */ = {
+		37F6D5F14D56D5360DAB93DA8AACE872 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AB4EAD15C12989F6A29985FDB3D4064B /* Foundation.framework in Frameworks */,
+				F25087B799FCE64FAA5E0FEC658AD424 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -152,54 +152,28 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		08907F8D47545938B7479FE48B7F55EC /* Exts */ = {
+		25B54D40B48182184414803726133CAF /* Tools */ = {
 			isa = PBXGroup;
 			children = (
-				898296025369B8D5502EB6D6684D7925 /* Array+ez.swift */,
-				0F3BA8915BFE31C97B1339BC1D7EDBA2 /* Data+ez.swift */,
-				0C2FC21EC363BFA510F6533FDD7B89BC /* Date+ez.swift */,
-				902C6F3516CB4DEF82F7D4216313CD8E /* String+version.swift */,
-				6E7500378866B037243E75C612125668 /* UIButton+ez.swift */,
-				BB94D374D9038BADA17BD6C23DEAEEBD /* UIColor+ez.swift */,
-				E50742105FC09161C962E3EC68C8C6B0 /* UIDevice+ez.swift */,
-				6930C5D7C4E3295C653E1B8999C784D8 /* UIFont+ez.swift */,
-				89A2C574299B9710E1C44FE20A6C5815 /* UIGesture+ez.swift */,
-				F996DE5DCBB0D4CE29E29B8DDE4384C8 /* UIImage+ez.swift */,
-				2627DF94B42B38A456C8A220BCA09BEF /* UILabel+ez.swift */,
-				057FF828CA00551C67A316889CF887E1 /* UINib+ez.swift */,
-				BD53026B6FC13BEB30FF4060B0FB9C6A /* UITableView+ez.swift */,
-				B5C207BD12F6F7DAC6CAE32C39E6A167 /* UITextField+ez.swift */,
-				D353296E993CBD37DC29F97941AF23EB /* UITextView+ez.swift */,
-				21E0228BE867D231E57E9FB8B85A5D18 /* UIView+ez.swift */,
+				3F94776DDA7A141F66ADA89E76D22B17 /* AboutApp.swift */,
+				28589A87BC89B981335B054BEFEC0E15 /* AutoKeyboards.swift */,
+				DAD7117FB80646DF12EC18F78E2E6B66 /* Delayable.swift */,
+				1623CDF1655B98D2B79C645D26646D60 /* Delegated.swift */,
+				4C99E55EC0D208D27DE0DEBB8852F696 /* EazyCompatible.swift */,
+				9503A5EAB5D7CBF6E3CE1032F7D74D19 /* Path.swift */,
 			);
-			name = Exts;
-			path = EasyLib/Classes/Exts;
+			name = Tools;
+			path = EasyLib/Classes/Tools;
 			sourceTree = "<group>";
 		};
-		1E8BF785886115C2D2754A2531E34B95 /* Support Files */ = {
+		4D3FC2A303EA468B8194E397977EDD2D /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				55550B345A289C827DDC5A7BAF4288A4 /* EasyLib.modulemap */,
-				D17963A360D13FE1F23620E134AE8E31 /* EasyLib.xcconfig */,
-				BE040DA89F575EE898C2C9444EB67F9D /* EasyLib-dummy.m */,
-				71DB978BDF6082E0F6932B123CFE46AB /* EasyLib-prefix.pch */,
-				0EC6E711D0A0538A83829C480719C52D /* EasyLib-umbrella.h */,
-				02D0DCF2E48B92F167DD6BCF6176E066 /* Info.plist */,
+				C05ACD9AB3E76A331E4ACB8B2DB143B6 /* EasyLib.podspec */,
+				58DD8B0376C96361DEABB29D5F948D6F /* LICENSE */,
+				E5D3B2A3390CE71AC51DC6692DD90A45 /* README.md */,
 			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/EasyLib";
-			sourceTree = "<group>";
-		};
-		25B4521A3F815FA65419F76344CFB32D /* Style */ = {
-			isa = PBXGroup;
-			children = (
-				38A244E4538E4E064FD1441331BB4D54 /* Extensions.swift */,
-				E1519F08C629147F98ADC84662F9FF1C /* Style.swift */,
-				B6AF53FF3E3A61B466F4835EF7DB04FC /* StyleProtocol.swift */,
-				267E41E121B1849A003AA1FE /* UIKit+Exts.swift */,
-			);
-			name = Style;
-			path = EasyLib/Classes/Style;
+			name = Pod;
 			sourceTree = "<group>";
 		};
 		5E0D919E635D23B70123790B8308F8EF /* iOS */ = {
@@ -210,6 +184,43 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
+		65C549B015ACA744EE36ECD739E88480 /* Exts */ = {
+			isa = PBXGroup;
+			children = (
+				3B2A238F1180557114A4C378D43DA745 /* Array+ez.swift */,
+				5CB4734A9ABF83EA00ACFF9A9AAD6214 /* Data+ez.swift */,
+				60B6EE3CD308E2BA2BD43AF1DBECF8C5 /* Date+ez.swift */,
+				06F55B9802B2E180B2C81B7FE192F42F /* String+version.swift */,
+				9E69FE20E429DDA4144A5E4975803916 /* UIButton+ez.swift */,
+				E43A1BD8338BE7F381F2EF39672D0A91 /* UIColor+ez.swift */,
+				2D17832D90E12F8F10E0CBF0EAF09C29 /* UIDevice+ez.swift */,
+				04A6B4A8117A77038A664641B97AABC3 /* UIFont+ez.swift */,
+				7185BF37980A4CB256B8778FE8963C4C /* UIGesture+ez.swift */,
+				E0FAC4EB981A1E9CD103A3FAB4A21E10 /* UIImage+ez.swift */,
+				525F3B0DC815C88DB4215A10D5C8ED58 /* UILabel+ez.swift */,
+				C0028C08B593C368FFB167FBF91317A9 /* UINib+ez.swift */,
+				529AC80B34D9FE93EB63647C11222DF3 /* UITableView+ez.swift */,
+				7B4DB207C4618CAC5CBE2CC31AD3FA89 /* UITextField+ez.swift */,
+				F4550D5C8CA45B4397B42525E12C21EC /* UITextView+ez.swift */,
+				C1EE70C9B263DAF6A84A7B5790D75542 /* UIView+ez.swift */,
+			);
+			name = Exts;
+			path = EasyLib/Classes/Exts;
+			sourceTree = "<group>";
+		};
+		661909208E219C0F39AA12FD1BACEEDF /* EasyLib */ = {
+			isa = PBXGroup;
+			children = (
+				65C549B015ACA744EE36ECD739E88480 /* Exts */,
+				4D3FC2A303EA468B8194E397977EDD2D /* Pod */,
+				7D167C1830F4EAA90093504A2DDC77CD /* Style */,
+				E86052EE68692177F6B2F4C45AB80716 /* Support Files */,
+				25B54D40B48182184414803726133CAF /* Tools */,
+			);
+			name = EasyLib;
+			path = ../..;
+			sourceTree = "<group>";
+		};
 		697092A1B0E1F797CF5D347F1CF243F4 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -218,6 +229,18 @@
 				0076727CEFB3A7424D30B71A60697C3C /* Pods_EasyLib_Tests.framework */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		7D167C1830F4EAA90093504A2DDC77CD /* Style */ = {
+			isa = PBXGroup;
+			children = (
+				0C7298232BBECE49192BE657F65070C4 /* Extensions.swift */,
+				7D8036DCC5EE29866F1E0723C3152F1F /* Style.swift */,
+				F2854E73936DD39932C0E39E3E1FD150 /* StyleProtocol.swift */,
+				0104BFCBE190416349A6C683CCFBF291 /* UIKit+Exts.swift */,
+			);
+			name = Style;
+			path = EasyLib/Classes/Style;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
@@ -231,20 +254,6 @@
 			);
 			sourceTree = "<group>";
 		};
-		90A707153875C0A899B9F0C3C3A38651 /* Tools */ = {
-			isa = PBXGroup;
-			children = (
-				3AC57C4C242F4C4B2F4C988117E83917 /* AboutApp.swift */,
-				2DF9043CE02D1080A154271BC387F466 /* AutoKeyboards.swift */,
-				BBE5B4B3118013F9912AB6B667E7287C /* Delayable.swift */,
-				479A3F3382C51FF962B3A034C51805A6 /* Delegated.swift */,
-				2D919241A9595FBE0394D3C0BAE60E42 /* EazyCompatible.swift */,
-				3A136066A7665624DDBF7A9D516B3F41 /* Path.swift */,
-			);
-			name = Tools;
-			path = EasyLib/Classes/Tools;
-			sourceTree = "<group>";
-		};
 		A517DA268D0B0C5DB8052AEA858F2C1A /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -254,35 +263,12 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		A5B886453D13CC25ED367442B3A1421A /* EasyLib */ = {
-			isa = PBXGroup;
-			children = (
-				08907F8D47545938B7479FE48B7F55EC /* Exts */,
-				DBAEE7A462F153A807FB408E5875883F /* Pod */,
-				25B4521A3F815FA65419F76344CFB32D /* Style */,
-				1E8BF785886115C2D2754A2531E34B95 /* Support Files */,
-				90A707153875C0A899B9F0C3C3A38651 /* Tools */,
-			);
-			name = EasyLib;
-			path = ../..;
-			sourceTree = "<group>";
-		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
 				5E0D919E635D23B70123790B8308F8EF /* iOS */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		DBAEE7A462F153A807FB408E5875883F /* Pod */ = {
-			isa = PBXGroup;
-			children = (
-				F4563357F73C27BEAF9AB72D5D180737 /* EasyLib.podspec */,
-				F9860C8A3336A54C4AC984B0945C09D2 /* LICENSE */,
-				7FD40F87FBEFF712AAF50EEEE6490E9B /* README.md */,
-			);
-			name = Pod;
 			sourceTree = "<group>";
 		};
 		DC77466D7C4223BADA1209B9904B8B89 /* Pods-EasyLib_Tests */ = {
@@ -321,10 +307,24 @@
 			path = "Target Support Files/Pods-EasyLib_Example";
 			sourceTree = "<group>";
 		};
+		E86052EE68692177F6B2F4C45AB80716 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				12B56BBF0CC8B20E5840BACBB0DC005E /* EasyLib.modulemap */,
+				1323F09644C2A617AD00DF16B32614B1 /* EasyLib.xcconfig */,
+				1E071C472BDA6E5EB039689C16B8BFA8 /* EasyLib-dummy.m */,
+				4A4BE0D17F5A79E4EA8A5F00A339E563 /* EasyLib-prefix.pch */,
+				02CE9D29CAF00953BB8D678C61B12B4B /* EasyLib-umbrella.h */,
+				0C7FA399A62FC1FF52AB36988F9686AE /* Info.plist */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/EasyLib";
+			sourceTree = "<group>";
+		};
 		EFED7E8D9C10F36E2C2AD320074BDD34 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				A5B886453D13CC25ED367442B3A1421A /* EasyLib */,
+				661909208E219C0F39AA12FD1BACEEDF /* EasyLib */,
 			);
 			name = "Development Pods";
 			sourceTree = "<group>";
@@ -332,6 +332,14 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		4315D71AF01987FCF919622ABF2F6EA6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3B698C798E1FAD413220C81253289ACE /* EasyLib-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		692DFE79FBA225B720D1BD57FC171C1B /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -348,17 +356,26 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AE570DAA623ACE463608D5065342DDE5 /* Headers */ = {
-			isa = PBXHeadersBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				661F3BD19530E76ECE393E067CBBB95A /* EasyLib-umbrella.h in Headers */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		15F84C791C09D451DC4B9EFC7BECF762 /* EasyLib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1885C727B8B886335F015B2A815219E7 /* Build configuration list for PBXNativeTarget "EasyLib" */;
+			buildPhases = (
+				439AB634A0C67D88A23072E7AEB76119 /* Sources */,
+				37F6D5F14D56D5360DAB93DA8AACE872 /* Frameworks */,
+				4315D71AF01987FCF919622ABF2F6EA6 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EasyLib;
+			productName = EasyLib;
+			productReference = 6AF1B07D31D2E6BC174B851597EBC4FB /* EasyLib.framework */;
+			productType = "com.apple.product-type.framework";
+		};
 		24FECC4CFED3B74D4ADE3A9959D20B20 /* Pods-EasyLib_Example */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = B11CBF78671F92CD0EABE7BB0CB3E025 /* Build configuration list for PBXNativeTarget "Pods-EasyLib_Example" */;
@@ -375,23 +392,6 @@
 			name = "Pods-EasyLib_Example";
 			productName = "Pods-EasyLib_Example";
 			productReference = 1B3FD39FA7E26D7D118CB62D0D3FEB51 /* Pods_EasyLib_Example.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		C383910D4135C7388BEAE9D9A8A692E8 /* EasyLib */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 3C4CA62C548BD062118AEF71F9E5609B /* Build configuration list for PBXNativeTarget "EasyLib" */;
-			buildPhases = (
-				C9C9AE47B4C96F714E270F3F74DED6DB /* Sources */,
-				38F56A30987D672BDB3B3655435BB6F5 /* Frameworks */,
-				AE570DAA623ACE463608D5065342DDE5 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = EasyLib;
-			productName = EasyLib;
-			productReference = 6AF1B07D31D2E6BC174B851597EBC4FB /* EasyLib.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		EC83CF93F5B4B282343556E932F0D425 /* Pods-EasyLib_Tests */ = {
@@ -433,7 +433,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C383910D4135C7388BEAE9D9A8A692E8 /* EasyLib */,
+				15F84C791C09D451DC4B9EFC7BECF762 /* EasyLib */,
 				24FECC4CFED3B74D4ADE3A9959D20B20 /* Pods-EasyLib_Example */,
 				EC83CF93F5B4B282343556E932F0D425 /* Pods-EasyLib_Tests */,
 			);
@@ -449,37 +449,37 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C9C9AE47B4C96F714E270F3F74DED6DB /* Sources */ = {
+		439AB634A0C67D88A23072E7AEB76119 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5776FC86018E431FF46183EF4D0193DD /* AboutApp.swift in Sources */,
-				02C5F2548B2F8778EAF40737849F5D7A /* Array+ez.swift in Sources */,
-				11BCC83BACF73CAC4C553FEA3AA242DF /* AutoKeyboards.swift in Sources */,
-				66034BD093F0E998C8D8AA24F564FFFF /* Data+ez.swift in Sources */,
-				2681F85498A02BE3DEEF85BE8696EDF7 /* Date+ez.swift in Sources */,
-				0B0578325B2F659B6CE62B58B5CDE045 /* Delayable.swift in Sources */,
-				C34934F8B372FEA2C92583D457033069 /* Delegated.swift in Sources */,
-				267E41E221B1849A003AA1FE /* UIKit+Exts.swift in Sources */,
-				293A14D45ABDD85CB998E5D6CA214550 /* EasyLib-dummy.m in Sources */,
-				89C8F4DE9E2B67AFDE0734A01F365E0A /* EazyCompatible.swift in Sources */,
-				111A05B8680B3CDDF11442CDD2D5AF69 /* Extensions.swift in Sources */,
-				A4CD4D983C7332EDD2F6AF201BA711C8 /* Path.swift in Sources */,
-				FBACAC463100D7682242EA25FB3E8AAE /* String+version.swift in Sources */,
-				FF39073931C34A7DB6749FF232ECA2F1 /* Style.swift in Sources */,
-				03615728F9913EF2864598F8F0E895C4 /* StyleProtocol.swift in Sources */,
-				74BE9E5BF70814BAE12E29DDF5C1BFF2 /* UIButton+ez.swift in Sources */,
-				2C00FDC6476D117F88AC9D69FC457D97 /* UIColor+ez.swift in Sources */,
-				392D573B334EF12B0AD7179B328A1CC5 /* UIDevice+ez.swift in Sources */,
-				EC4818E2EDE469956FA964D26AF0D846 /* UIFont+ez.swift in Sources */,
-				1DE53BAAAB0EEF6319297BE5DDA035D7 /* UIGesture+ez.swift in Sources */,
-				9F4F2B9387D84526340875CAF8BD15B7 /* UIImage+ez.swift in Sources */,
-				E36B9AA972880CD7896CEF66DA4067F0 /* UILabel+ez.swift in Sources */,
-				5877BB0A9210E2EA0260E47436D87305 /* UINib+ez.swift in Sources */,
-				1B001D2AF56E284AE59F9BC1D50769B8 /* UITableView+ez.swift in Sources */,
-				04E354C0AAC764FBCCDEDA4DD2F59B60 /* UITextField+ez.swift in Sources */,
-				15DCF5EE1778643BB969733E45A2A8E1 /* UITextView+ez.swift in Sources */,
-				E961746355A9F2A96A011455B143DADA /* UIView+ez.swift in Sources */,
+				5640594C4B8C6762768DEBE1D32F1DB6 /* AboutApp.swift in Sources */,
+				BC4A4BF2CD6B3CB1DD9271D7ACF4353B /* Array+ez.swift in Sources */,
+				FA58A40F35B5C8E85E3511AE4E205E26 /* AutoKeyboards.swift in Sources */,
+				4A8BB7D56651400703619BF38B3CD38C /* Data+ez.swift in Sources */,
+				1309D3216F51BACFAF463A11103E79F1 /* Date+ez.swift in Sources */,
+				7F2805CE6AE1EBF5908FBB572F6F26F1 /* Delayable.swift in Sources */,
+				9FF222F2B4739484996E91B0DBA6E328 /* Delegated.swift in Sources */,
+				E0283673E2647A933B509A6168F9F761 /* EasyLib-dummy.m in Sources */,
+				438FA18DF416BD1690EF76446C53AAE8 /* EazyCompatible.swift in Sources */,
+				048BF4298263D7304CA5F6C9A392A407 /* Extensions.swift in Sources */,
+				1B8C44B1E8D3F02B0656EB8D8C879004 /* Path.swift in Sources */,
+				A1851DBF6C2713B1711E850A78E520B7 /* String+version.swift in Sources */,
+				55A94A43B445B16C6CD75D6549A03CD9 /* Style.swift in Sources */,
+				218A8C0908821C2344381F4057E0BCEB /* StyleProtocol.swift in Sources */,
+				71A4412998AFF93963D7AB82AA8572E5 /* UIButton+ez.swift in Sources */,
+				D0441BE9DDDCC31563CA965392A6EDD0 /* UIColor+ez.swift in Sources */,
+				D38899DCDB37825D19496DD1DEB5DF6C /* UIDevice+ez.swift in Sources */,
+				B50976C7C82B099B7E9AE877A3A5B44E /* UIFont+ez.swift in Sources */,
+				6D53895CCB9B655432385C17D8F4B141 /* UIGesture+ez.swift in Sources */,
+				97EFA5CE077B3FADD8EDBC9B003C4051 /* UIImage+ez.swift in Sources */,
+				D36B981B766DD22E7AF72D25837AFF51 /* UIKit+Exts.swift in Sources */,
+				6217500ADA0C79E98B13036350B196F1 /* UILabel+ez.swift in Sources */,
+				95C6A0EC13B8EF1192FE737AA5006E17 /* UINib+ez.swift in Sources */,
+				DB395B30ABE4F36F368DB31545E91802 /* UITableView+ez.swift in Sources */,
+				9A262E1D3851BAAC54D62979C6B37C69 /* UITextField+ez.swift in Sources */,
+				CACBC3C5254DAA1CEAD7A556301723D0 /* UITextView+ez.swift in Sources */,
+				D58CE55C211DBC4AD0A83F2013832CF4 /* UIView+ez.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -503,12 +503,45 @@
 		BA9FEC800D7EF53B450A778F225320CF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = EasyLib;
-			target = C383910D4135C7388BEAE9D9A8A692E8 /* EasyLib */;
+			target = 15F84C791C09D451DC4B9EFC7BECF762 /* EasyLib */;
 			targetProxy = 6A348ACC809DBA35C5892B994B7318AC /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		00F2DE6FF1D69AEBF45E1E296856BDC2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1323F09644C2A617AD00DF16B32614B1 /* EasyLib.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/EasyLib/EasyLib-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/EasyLib/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/EasyLib/EasyLib.modulemap";
+				PRODUCT_MODULE_NAME = EasyLib;
+				PRODUCT_NAME = EasyLib;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		199D972A13F2B4C56847F7A89CCA83BC /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -607,9 +640,9 @@
 			};
 			name = Debug;
 		};
-		29C01E99F1C046D00794C57E55EF08EB /* Debug */ = {
+		62B50B5D56EB06E2A406FEB135D18A5D /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D17963A360D13FE1F23620E134AE8E31 /* EasyLib.xcconfig */;
+			baseConfigurationReference = 1323F09644C2A617AD00DF16B32614B1 /* EasyLib.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -632,7 +665,7 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -699,39 +732,6 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		CD47A929213FF6853E19C8DC75EFA72B /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = D17963A360D13FE1F23620E134AE8E31 /* EasyLib.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				GCC_PREFIX_HEADER = "Target Support Files/EasyLib/EasyLib-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/EasyLib/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/EasyLib/EasyLib.modulemap";
-				PRODUCT_MODULE_NAME = EasyLib;
-				PRODUCT_NAME = EasyLib;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -844,20 +844,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		1885C727B8B886335F015B2A815219E7 /* Build configuration list for PBXNativeTarget "EasyLib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				62B50B5D56EB06E2A406FEB135D18A5D /* Debug */,
+				00F2DE6FF1D69AEBF45E1E296856BDC2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				199D972A13F2B4C56847F7A89CCA83BC /* Debug */,
 				FDB2FC4A1E5891381CD9D922145497F1 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		3C4CA62C548BD062118AEF71F9E5609B /* Build configuration list for PBXNativeTarget "EasyLib" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				29C01E99F1C046D00794C57E55EF08EB /* Debug */,
-				CD47A929213FF6853E19C8DC75EFA72B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

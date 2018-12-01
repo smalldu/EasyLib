@@ -1,6 +1,6 @@
 {
   "name": "EasyLib",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "summary": "A short description of EasyLib.",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/smalldu/EasyLib",
@@ -13,10 +13,10 @@
   },
   "source": {
     "git": "https://github.com/smalldu/EasyLib.git",
-    "tag": "0.1.1"
+    "tag": "0.1.2"
   },
   "platforms": {
     "ios": "9.0"
   },
-  "source_files": "EasyLib/Classes/**/*"
+  "source_files": "EasyLib/Classes/**/*.{swift,h,m}"
 }

@@ -50,28 +50,3 @@ public func + (lhs: AttributedString, rhs: String) -> AttributedString {
   final.append(NSMutableAttributedString(string: rhs))
   return final
 }
-
-
-extension NSNumber {
-  
-  internal static func from(float: Float?) -> NSNumber? {
-    guard let float = float else { return nil }
-    return NSNumber(value: float)
-  }
-  
-  internal static func from(int: Int?) -> NSNumber? {
-    guard let int = int else { return nil }
-    return NSNumber(value: int)
-  }
-  
-  internal static func from(underlineStyle: NSUnderlineStyle?) -> NSNumber? {
-    guard let v = underlineStyle?.rawValue else { return nil }
-    return NSNumber(value: v)
-  }
-  
-  internal func toUnderlineStyle() -> NSUnderlineStyle? {
-    return NSUnderlineStyle.init(rawValue: self.intValue)
-  }
-  
-}
-
