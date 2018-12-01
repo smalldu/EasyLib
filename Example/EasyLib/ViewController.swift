@@ -33,14 +33,13 @@ class ViewController: UIViewController {
    
     let style = Style {
       $0.color = .white
-      $0.font = UIFont.lightOf(12)
+      $0.font = .lightOf(12)
       $0.backColor = .black
       $0.underline = .styleSingle
       $0.underlineColor = .red
     }
     
     let attribute = " Hello World It is a good world . ".set(style)
-    
     
     let style1 = Style {
       $0.color = UIColor(hex: 0x666666)

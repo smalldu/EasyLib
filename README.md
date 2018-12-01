@@ -5,7 +5,7 @@
 [![License](https://img.shields.io/cocoapods/l/EasyLib.svg?style=flat)](https://cocoapods.org/pods/EasyLib)
 [![Platform](https://img.shields.io/cocoapods/p/EasyLib.svg?style=flat)](https://cocoapods.org/pods/EasyLib)
 
-## Example
+## 使用示例
 
 日常总结了些便利的方法，为了方便在切换项目的时候依然使用到他们。所以写了这个`EasyLib`。 
 
@@ -42,6 +42,12 @@ view.ez.configPan { (panGesutre) in
 ```
 `longPress` 、`swip` 的用法类似 
 
+### 富文本便利方法以及`UILabel` 、 `UITextField` 、 `UITextView` 样式预定义
+
+我之前有写过一个工具 [EasyAttribute](https://github.com/smalldu/EasyAttribute) 通过链式调用的方式来使用属性字。 感觉使用起来已经很方便了。
+后来我看到了 [SwiftRichString](https://github.com/malcommac/SwiftRichString) 发现他的方式更好一点，因为可以对样式先做预设，他还对字体做了很多自定义，对样式做了 `group` 等更复杂的方法。
+我参照了他的方式，结合我日常工作需求写了个简单版本。
+
 
 
 ### 其他工具类 
@@ -50,7 +56,12 @@ view.ez.configPan { (panGesutre) in
 
 
 
-## Requirements
+
+
+
+
+
+
 
 ## Installation
 
