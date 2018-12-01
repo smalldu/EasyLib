@@ -70,8 +70,8 @@ class ViewController: UIViewController {
           $0.lineSpacing = 15
         }))
     
-//    label.ez.style = Styles.H1
-//    label.ez.text = "滚滚长江东逝水，浪花淘尽英雄。"
+    label.ez.style = Styles.H1
+    label.ez.text = "滚滚长江东逝水，浪花淘尽英雄。"
   
   }
   
