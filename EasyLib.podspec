@@ -30,7 +30,7 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '9.0'
   # s.resource = 'EasyLib/Assets/**/*'
-  s.source_files = 'EasyLib/Classes/**/*'
+  s.source_files = 'EasyLib/Classes/**/*.{swift,h,m}'
   
   # s.resource_bundles = {
   #   'EasyLib' => ['EasyLib/Assets/*.png']
