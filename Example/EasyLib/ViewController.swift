@@ -22,6 +22,51 @@ struct Styles {
   }
 }
 
+enum ButtonStyle {
+  
+  case main(CGFloat)
+  case gray(CGFloat)
+  
+  struct Item {
+    let font: UIFont
+    let color: UIColor
+    let backgroundColor: UIColor
+  }
+  
+  var style: Item {
+    switch self {
+    case .main(let size):
+      return Item(font: .regularOf(size), color: .red , backgroundColor: .white)
+    case .gray(let size):
+      return Item(font: .regularOf(size), color: .gray , backgroundColor: .white)
+    }
+  }
+  
+}
+
+extension UIButton{
+  
+  func set(_ style: ButtonStyle) {
+    self.ez.normalColor = style.style.color
+    self.ez.font = style.style.font
+    self.backgroundColor = style.style.backgroundColor
+  }
+  
+}
+
+enum BorderStyle {
+  
+  
+}
+
+extension UIView {
+  
+  func set(_ style: BorderStyle ){
+    
+  }
+  
+}
+
 class ViewController: UIViewController {
   
   @IBOutlet weak var label: UILabel!
@@ -70,7 +115,10 @@ class ViewController: UIViewController {
     
     label.ez.style = Styles.H1
     label.ez.text = "滚滚长江东逝水，浪花淘尽英雄。"
-  
+    
+    let button = UIButton()
+    button.set(.main(15))
+    
   }
   
 }

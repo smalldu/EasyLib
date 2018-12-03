@@ -61,7 +61,7 @@ public extension Auto where Base: UIButton {
   
   public var normalImage: UIImage?{
     set{
-      self.base.setImage(newValue, for: UIControlState.normal)
+      self.base.setImage(newValue, for: .normal)
     }
     get{
       return self.base.imageView?.image
@@ -70,7 +70,7 @@ public extension Auto where Base: UIButton {
   
   public var normalColor: UIColor?{
     set{
-      self.base.setTitleColor(newValue, for: UIControlState.normal )
+      self.base.setTitleColor(newValue, for: .normal )
     }
     get{
       return self.base.titleLabel?.textColor
@@ -86,5 +86,24 @@ public extension Auto where Base: UIButton {
     }
   }
   
+  public func regular(size: CGFloat,color: UIColor?){
+    self.base.setTitleColor(color, for: .normal)
+    self.base.titleLabel?.font = UIFont.regularOf(size)
+  }
+
+  public func medium(size: CGFloat,color: UIColor?){
+    self.base.setTitleColor(color, for: .normal)
+    self.base.titleLabel?.font = UIFont.mediumOf(size)
+  }
+
+  public func light(size: CGFloat,color: UIColor?){
+    self.base.setTitleColor(color, for: .normal)
+    self.base.titleLabel?.font = UIFont.lightOf(size)
+  }
+
+  public func semibold(size: CGFloat,color: UIColor?){
+    self.base.setTitleColor(color, for: .normal)
+    self.base.titleLabel?.font = UIFont.semiboldOf(size)
+  }
   
 }

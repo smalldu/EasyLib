@@ -20,7 +20,7 @@ public extension EazyCompatible {
   }
 }
 
-public struct Auto<Base> {
+public class Auto<Base> {
   public let base: Base
   public init(_ base: Base) {
     self.base = base
