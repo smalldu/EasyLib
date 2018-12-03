@@ -51,30 +51,40 @@ public extension Auto where Base: UIButton {
   }
   
   public var normalTitle: String?{
-    set(v){
-      self.base.setTitle(v,for: .normal)
+    set{
+      self.base.setTitle(newValue,for: .normal)
     }
     get{
       return self.base.titleLabel?.text
     }
   }
   
-  public var normalImage:UIImage?{
-    set(v){
-      self.base.setImage(v, for: UIControlState.normal)
+  public var normalImage: UIImage?{
+    set{
+      self.base.setImage(newValue, for: UIControlState.normal)
     }
     get{
       return self.base.imageView?.image
     }
   }
   
-  public var normalColor:UIColor?{
-    set(v){
-      self.base.setTitleColor(v, for: UIControlState.normal )
+  public var normalColor: UIColor?{
+    set{
+      self.base.setTitleColor(newValue, for: UIControlState.normal )
     }
     get{
       return self.base.titleLabel?.textColor
     }
   }
+  
+  public var font: UIFont? {
+    set{
+      self.base.titleLabel?.font = newValue
+    }
+    get{
+      return self.base.titleLabel?.font
+    }
+  }
+  
   
 }
