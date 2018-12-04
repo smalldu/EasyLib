@@ -13,6 +13,7 @@
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		8108AD2F21B631D200D422C8 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8108AD2E21B631D200D422C8 /* Router.swift */; };
 		C4D6090D498934A74E3E43E3 /* Pods_EasyLib_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 006C0AB63E50A91A3C75CFE3 /* Pods_EasyLib_Example.framework */; };
 		D6479D4A9F69883F8D496022 /* Pods_EasyLib_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4AB3AF506520252C0513BC4 /* Pods_EasyLib_Tests.framework */; };
 /* End PBXBuildFile section */
@@ -43,6 +44,7 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		7E62EC02D5EE63A0766599CA /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		8108AD2E21B631D200D422C8 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		85BB76E8E51F2B45FE868795 /* Pods-EasyLib_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyLib_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-EasyLib_Example/Pods-EasyLib_Example.release.xcconfig"; sourceTree = "<group>"; };
 		9910A504B88C7BA7E064B8E0 /* EasyLib.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = EasyLib.podspec; path = ../EasyLib.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		C4AB3AF506520252C0513BC4 /* Pods_EasyLib_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EasyLib_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -113,6 +115,7 @@
 		607FACD21AFB9204008FA782 /* Example for EasyLib */ = {
 			isa = PBXGroup;
 			children = (
+				8108AD2D21B631B800D422C8 /* RouterDemo */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
@@ -157,6 +160,14 @@
 				021E812179E20AC120D9A1C7 /* LICENSE */,
 			);
 			name = "Podspec Metadata";
+			sourceTree = "<group>";
+		};
+		8108AD2D21B631B800D422C8 /* RouterDemo */ = {
+			isa = PBXGroup;
+			children = (
+				8108AD2E21B631D200D422C8 /* Router.swift */,
+			);
+			name = RouterDemo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -324,6 +335,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
+				8108AD2F21B631D200D422C8 /* Router.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
