@@ -9,19 +9,6 @@
 import UIKit
 import EasyLib
 
-
-struct Styles {
-  static let H1 = Style {
-    $0.color = UIColor(hex: 0x333333)
-    $0.font = .mediumOf(30)
-  }
-  
-  static let H2 = Style {
-    $0.color = UIColor(hex: 0x333333)
-    $0.font = .mediumOf(26)
-  }
-}
-
 enum ButtonStyle {
   
   case main(CGFloat)
@@ -113,8 +100,6 @@ class ViewController: UIViewController {
           $0.lineSpacing = 15
         }))
     
-    label.ez.style = Styles.H1
-    label.ez.text = "滚滚长江东逝水，浪花淘尽英雄。"
     
     let button = UIButton()
     button.set(.main(15))
