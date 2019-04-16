@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'EasyLib'
-  s.version          = '0.2.2'
+  s.version          = '0.2.3'
   s.summary          = 'A short description of EasyLib.'
 
 # This description is used to generate tags and improve search results.
@@ -27,7 +27,6 @@ TODO: Add long description of the pod here.
   s.author           = { 'smalldu' => '363958265@qq.com' }
   s.source           = { :git => 'https://github.com/smalldu/EasyLib.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-  s.swift_version = '5.0'
   s.ios.deployment_target = '9.0'
   # s.resource = 'EasyLib/Assets/**/*'
   s.source_files = 'EasyLib/Classes/**/*.{swift,h,m}'
