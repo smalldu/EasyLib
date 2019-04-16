@@ -24,7 +24,7 @@ public class Delegated<Input,Output> {
 
 public extension Delegated where Input == Void {
   
-  public func call() -> Output? {
+  func call() -> Output? {
     return call(())
   }
   

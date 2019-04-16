@@ -12,7 +12,7 @@ extension UIView : EazyCompatible{
 
 public extension Auto where Base: UIView {
   
-  public var height: CGFloat{
+  var height: CGFloat{
     set(v){
       self.base.frame.size.height = v
     }
@@ -21,7 +21,7 @@ public extension Auto where Base: UIView {
     }
   }
   
-  public var width:CGFloat{
+  var width:CGFloat{
     set(v){
       self.base.frame.size.width = v
     }
@@ -30,7 +30,7 @@ public extension Auto where Base: UIView {
     }
   }
   
-  public var size:CGSize{
+  var size:CGSize{
     set(v){
       self.base.frame.size = v
     }
@@ -39,7 +39,7 @@ public extension Auto where Base: UIView {
     }
   }
   
-  public var left:CGFloat{
+  var left:CGFloat{
     set(new){
       self.base.frame.origin.x = new
     }
@@ -48,7 +48,7 @@ public extension Auto where Base: UIView {
     }
   }
   
-  public var right:CGFloat{
+  var right:CGFloat{
     set(new){
       self.base.frame.origin.x = new
     }
@@ -57,7 +57,7 @@ public extension Auto where Base: UIView {
     }
   }
   
-  public var top:CGFloat{
+  var top:CGFloat{
     set(v){
       self.base.frame.origin.y = v
     }
@@ -66,7 +66,7 @@ public extension Auto where Base: UIView {
     }
   }
   
-  public var bottom:CGFloat{
+  var bottom:CGFloat{
     set(v){
       self.base.frame.origin.y = v - self.base.frame.size.height
     }
@@ -76,7 +76,7 @@ public extension Auto where Base: UIView {
   }
   
   
-  public var origin:CGPoint{
+  var origin:CGPoint{
     set(v){
       self.base.frame.origin = v
     }
@@ -85,14 +85,14 @@ public extension Auto where Base: UIView {
     }
   }
   
-  public func withoutAnimation(_ handler:(()->())){
+  func withoutAnimation(_ handler:(()->())){
     CATransaction.begin()
     CATransaction.setDisableActions(true) // 关闭动画
     handler() //无动画执行
     CATransaction.commit()
   }
   
-  public func findFirstResponder()->UIView?{
+  func findFirstResponder()->UIView?{
     if self.base.isFirstResponder{
       return self.base
     }

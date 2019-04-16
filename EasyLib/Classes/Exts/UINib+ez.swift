@@ -9,7 +9,7 @@ import UIKit
 
 public extension UINib {
   
-  public convenience init(nibName: String){
+  convenience init(nibName: String){
     self.init(nibName: nibName, bundle: Bundle.main)
   }
   

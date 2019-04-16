@@ -9,22 +9,22 @@ import UIKit
 
 public extension Auto where Base: UITextField {
   
-  public func regular(size: CGFloat,color: UIColor?){
+  func regular(size: CGFloat,color: UIColor?){
     self.base.textColor = color
     self.base.font = UIFont.regularOf(size)
   }
   
-  public func medium(size: CGFloat,color: UIColor?){
+  func medium(size: CGFloat,color: UIColor?){
     self.base.textColor = color
     self.base.font = UIFont.mediumOf(size)
   }
   
-  public func light(size: CGFloat,color: UIColor?){
+  func light(size: CGFloat,color: UIColor?){
     self.base.textColor = color
     self.base.font = UIFont.lightOf(size)
   }
   
-  public func semibold(size: CGFloat,color: UIColor?){
+  func semibold(size: CGFloat,color: UIColor?){
     self.base.textColor = color
     self.base.font = UIFont.semiboldOf(size)
   }

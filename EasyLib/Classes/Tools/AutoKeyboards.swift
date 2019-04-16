@@ -41,8 +41,8 @@ class AutoKey: NSObject {
   public static var shared: AutoKey = AutoKey()
   
   public func registNotify(){
-    NotificationCenter.default.addObserver(self, selector: #selector(keyBoardWillShowBase(_:)), name: NSNotification.Name.UIKeyboardWillShow , object: nil)
-    NotificationCenter.default.addObserver(self, selector: #selector(keyBoardWillHideBase(_:)), name: NSNotification.Name.UIKeyboardWillHide , object: nil)
+    NotificationCenter.default.addObserver(self, selector: #selector(keyBoardWillShowBase(_:)), name: UIResponder.keyboardWillShowNotification , object: nil)
+    NotificationCenter.default.addObserver(self, selector: #selector(keyBoardWillHideBase(_:)), name: UIResponder.keyboardWillHideNotification , object: nil)
   }
   
   public func registTap(){
@@ -64,8 +64,8 @@ class AutoKey: NSObject {
   @objc public func keyBoardWillShowBase(_ note:Notification){
     guard let userInfo  = note.userInfo else { return }
     guard let window = UIApplication.shared.keyWindow else { return }
-    let keyBoardBounds = (userInfo[UIKeyboardFrameEndUserInfoKey] as! NSValue).cgRectValue
-    let duration = (userInfo[UIKeyboardAnimationDurationUserInfoKey] as! NSNumber).doubleValue
+    let keyBoardBounds = (userInfo[UIResponder.keyboardFrameEndUserInfoKey] as! NSValue).cgRectValue
+    let duration = (userInfo[UIResponder.keyboardAnimationDurationUserInfoKey] as! NSNumber).doubleValue
     let deltaY = keyBoardBounds.size.height
     
     let currV = window.ez.findFirstResponder()
@@ -79,7 +79,7 @@ class AutoKey: NSObject {
         self.view.transform = CGAffineTransform(translationX: 0,y: min((-deltaY+(self.view.frame.height + p.y - currV.frame.height - 20)),0))
       }
       if duration > 0 {
-        let options = UIViewAnimationOptions(rawValue: UInt((userInfo[UIKeyboardAnimationCurveUserInfoKey] as! NSNumber).intValue << 16))
+        let options = UIView.AnimationOptions(rawValue: UInt((userInfo[UIResponder.keyboardAnimationCurveUserInfoKey] as! NSNumber).intValue << 16))
         UIView.animate(withDuration: duration, delay: 0, options:options, animations: animations, completion: nil)
       }else{
         animations()
@@ -89,12 +89,12 @@ class AutoKey: NSObject {
   
   @objc public func keyBoardWillHideBase(_ note: Notification){
     let userInfo  = note.userInfo
-    let duration = (userInfo![UIKeyboardAnimationDurationUserInfoKey] as! NSNumber).doubleValue
+    let duration = (userInfo![UIResponder.keyboardAnimationDurationUserInfoKey] as! NSNumber).doubleValue
     let animations:(() -> Void) = {
       self.view.transform = CGAffineTransform.identity
     }
     if duration > 0 {
-      let options = UIViewAnimationOptions(rawValue: UInt((userInfo![UIKeyboardAnimationCurveUserInfoKey] as! NSNumber).intValue << 16))
+      let options = UIView.AnimationOptions(rawValue: UInt((userInfo![UIResponder.keyboardAnimationCurveUserInfoKey] as! NSNumber).intValue << 16))
       UIView.animate(withDuration: duration, delay: 0, options:options, animations: animations, completion: nil)
     }else{
       animations()

@@ -11,7 +11,7 @@ public protocol ReusableView: class {}
 
 public extension ReusableView where Self: UIView {
   
-  public static var reuseIdentifier: String{
+  static var reuseIdentifier: String{
     return String(describing: self)
   }
   
@@ -23,7 +23,7 @@ public protocol NibLoadableView: class { }
 
 public extension NibLoadableView where Self: UIView{
   
-  public static var NibName: String {
+  static var NibName: String {
     return String(describing: self)
   }
   
@@ -33,16 +33,16 @@ extension UITableViewCell: NibLoadableView{ }
 
 public extension UITableView {
   
-  public func easyRegisterNib<T:UITableViewCell>(_:T.Type) {
+  func easyRegisterNib<T:UITableViewCell>(_:T.Type) {
     let Nib = UINib.init(nibName: T.NibName, bundle: nil)
     register(Nib, forCellReuseIdentifier: T.reuseIdentifier)
   }
   
-  public func easyRegisterClass<T:UITableViewCell>(_:T.Type) {
+  func easyRegisterClass<T:UITableViewCell>(_:T.Type) {
     register(T.self , forCellReuseIdentifier: T.reuseIdentifier)
   }
   
-  public func easyDequeueReusableCell<T:UITableViewCell>(forIndexPath indexPath: IndexPath) -> T {
+  func easyDequeueReusableCell<T:UITableViewCell>(forIndexPath indexPath: IndexPath) -> T {
     guard let cell = dequeueReusableCell(withIdentifier: T.reuseIdentifier, for: indexPath) as? T else {
       fatalError("Could not dequeue cell withidentifier : \(T.reuseIdentifier)")
     }

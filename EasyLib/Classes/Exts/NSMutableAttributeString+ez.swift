@@ -9,7 +9,7 @@ import UIKit
 
 public extension String {
   
-  public func attribute()->NSMutableAttributedString{
+  func attribute()->NSMutableAttributedString{
     return NSMutableAttributedString(string: self)
   }
   
@@ -18,7 +18,7 @@ public extension String {
 
 public extension NSMutableAttributedString {
   
-  public func ez_allRange()->NSRange{
+  func ez_allRange()->NSRange{
     return NSMakeRange(0,self.length)
   }
   
@@ -43,37 +43,37 @@ public extension NSMutableAttributedString {
   }
   
   // 中划线
-  public func strike(_ value: Int)->NSMutableAttributedString{
+  func strike(_ value: Int)->NSMutableAttributedString{
     self.addAttributes([.strikethroughStyle:value], range: self.ez_allRange())
     return self
   }
   // 中划线颜色
-  public func strikeColor(_ color: UIColor)->NSMutableAttributedString{
+  func strikeColor(_ color: UIColor)->NSMutableAttributedString{
     self.addAttributes([.strikethroughColor:color], range: self.ez_allRange())
     return self
   }
   // 描边宽度
-  public func strokeWidth(_ width: CGFloat)->NSMutableAttributedString{
+  func strokeWidth(_ width: CGFloat)->NSMutableAttributedString{
     self.addAttributes([.strokeWidth:width], range: self.ez_allRange())
     return self
   }
   // 描边颜色
-  public func strokeColor(_ color: UIColor)->NSMutableAttributedString{
+  func strokeColor(_ color: UIColor)->NSMutableAttributedString{
     self.addAttributes([.strokeColor:color], range: self.ez_allRange())
     return self
   }
   // 字间距
-  public func fontSpace(_ space: CGFloat)->NSMutableAttributedString{
+  func fontSpace(_ space: CGFloat)->NSMutableAttributedString{
     self.addAttributes([.kern:space], range: self.ez_allRange())
     return self
   }
   // 背景色
-  public func backgroundColor(_ color: UIColor)->NSMutableAttributedString{
+  func backgroundColor(_ color: UIColor)->NSMutableAttributedString{
     self.addAttributes([.backgroundColor:color], range: self.ez_allRange())
     return self
   }
   // 前景色
-  public func color(_ color: UIColor)->NSMutableAttributedString{
+  func color(_ color: UIColor)->NSMutableAttributedString{
     self.addAttributes([.foregroundColor:color], range: self.ez_allRange())
     return self
   }
@@ -88,17 +88,17 @@ public extension NSMutableAttributedString {
     return self
   }
   // 字体
-  public func ez_font(_ font: UIFont)->NSMutableAttributedString{
+  func ez_font(_ font: UIFont)->NSMutableAttributedString{
     self.addAttributes([.font:font], range: self.ez_allRange())
     return self
   }
   // 系统字体大小
-  public func fontSize(_ size: CGFloat)->NSMutableAttributedString{
+  func fontSize(_ size: CGFloat)->NSMutableAttributedString{
     self.addAttributes([.font:UIFont.systemFont(ofSize: size)], range: self.ez_allRange())
     return self
   }
   // 行间距
-  public func ez_lineSpace( _ space: CGFloat )->NSMutableAttributedString{
+  func ez_lineSpace( _ space: CGFloat )->NSMutableAttributedString{
     let style = NSMutableParagraphStyle()
     style.lineSpacing = space
     style.lineBreakMode = .byCharWrapping
@@ -106,7 +106,7 @@ public extension NSMutableAttributedString {
     return self
   }
   
-  public func toEz() -> EZAttributeString{
+  func toEz() -> EZAttributeString{
     return EZAttributeString(attributeText: self)
   }
 }

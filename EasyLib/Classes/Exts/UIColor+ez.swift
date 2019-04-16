@@ -10,7 +10,7 @@ import UIKit
 
 public extension UIColor{
   
-  public convenience init(hexString: String) {
+  convenience init(hexString: String) {
     let hexString = hexString.trimmingCharacters(in: .whitespacesAndNewlines)
     let scanner   = Scanner(string: hexString)
     
@@ -27,7 +27,7 @@ public extension UIColor{
     }
   }
   
-  public convenience init(hex: UInt32, useAlpha alphaChannel: Bool = false) {
+  convenience init(hex: UInt32, useAlpha alphaChannel: Bool = false) {
     let mask = UInt32(0xFF)
     
     let r = hex >> (alphaChannel ? 24 : 16) & mask
@@ -43,7 +43,7 @@ public extension UIColor{
     self.init(red: red, green: green, blue: blue, alpha: alpha)
   }
   
-  public convenience init(red: Int, green: Int, blue: Int) {
+  convenience init(red: Int, green: Int, blue: Int) {
     assert(red >= 0 && red <= 255, "Invalid red component")
     assert(green >= 0 && green <= 255, "Invalid green component")
     assert(blue >= 0 && blue <= 255, "Invalid blue component")
@@ -51,7 +51,7 @@ public extension UIColor{
     self.init(red: CGFloat(red) / 255.0, green: CGFloat(green) / 255.0, blue: CGFloat(blue) / 255.0, alpha: 1.0)
   }
   
-  public convenience init(rgb: Int) {
+  convenience init(rgb: Int) {
     self.init(
       red: (rgb >> 16) & 0xFF,
       green: (rgb >> 8) & 0xFF,
@@ -63,7 +63,7 @@ public extension UIColor{
   /// To pure color image
   ///
   /// - Returns: Optinal image
-  public func toImage(_ size: CGSize) -> UIImage? {
+  func toImage(_ size: CGSize) -> UIImage? {
     let rect = CGRect(x: 0,y: 0,width: size.width,height: size.height)
     UIGraphicsBeginImageContext(rect.size)
     let context = UIGraphicsGetCurrentContext()

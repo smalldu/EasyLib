@@ -10,7 +10,7 @@ import UIKit
 
 public extension UIFont {
   
-  public static func lightOf(_ size:CGFloat) -> UIFont {
+  static func lightOf(_ size:CGFloat) -> UIFont {
     if let font = UIFont(name: "PingFangSC-Light" , size: size){
       return font
     }else{
@@ -18,7 +18,7 @@ public extension UIFont {
     }
   }
   
-  public static func regularOf(_ size:CGFloat) -> UIFont {
+  static func regularOf(_ size:CGFloat) -> UIFont {
     if let font = UIFont(name: "PingFangSC-Regular" , size: size){
       return font
     }else{
@@ -26,7 +26,7 @@ public extension UIFont {
     }
   }
   
-  public static func mediumOf(_ size:CGFloat)  -> UIFont {
+  static func mediumOf(_ size:CGFloat)  -> UIFont {
     if let font = UIFont(name: "PingFangSC-Medium" , size: size){
       return font
     }else{
@@ -34,7 +34,7 @@ public extension UIFont {
     }
   }
   
-  public static func semiboldOf(_ size:CGFloat)  -> UIFont {
+  static func semiboldOf(_ size:CGFloat)  -> UIFont {
     if let font = UIFont(name: "PingFangSC-Semibold" , size: size){
       return font
     }else{

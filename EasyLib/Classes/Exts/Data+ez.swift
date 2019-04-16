@@ -12,7 +12,7 @@ public extension Data{
   
   // 无损压缩
   @available(iOS 10.0, *)
-  public func lossLessCompress() -> Data? {
+  func lossLessCompress() -> Data? {
     var data: Data?
     print("图片压缩之前大小： \(self.count/1024)")
     if let ciImage = CIImage(data: self) , let colorSpace = ciImage.colorSpace{
@@ -24,7 +24,7 @@ public extension Data{
   }
   
   
-  public func lubanCompress() -> UIImage? {
+  func lubanCompress() -> UIImage? {
     guard let image = UIImage(data: self) else { return nil }
     //    var size: Double = 0
     print("缩放前大小\(image.size)")
@@ -88,7 +88,7 @@ public extension Data{
    */
   /// 正常的压缩
   /// - Returns: Data
-  public func compressNormal() -> Data {
+  func compressNormal() -> Data {
     print("压缩前图片大小： \(self.count/1024)")
     let originalSize = self.count/1024
     // 如果小于 300 k ，不做任何操作
@@ -98,7 +98,7 @@ public extension Data{
     }
     var result_data = self
     if let image = self.lubanCompress(){
-      if let data = UIImageJPEGRepresentation(image, 0.8){
+      if let data = image.jpegData(compressionQuality: 0.8){
         result_data = data
       }
     }

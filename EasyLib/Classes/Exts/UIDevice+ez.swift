@@ -19,7 +19,7 @@ public enum DeviceType {
 
 public extension UIDevice {
   
-  public static func iPhoneType() -> DeviceType{
+  static func iPhoneType() -> DeviceType{
     if UIDevice.current.userInterfaceIdiom == .phone {
       switch UIScreen.main.nativeBounds.height {
       case 1136:
@@ -41,20 +41,20 @@ public extension UIDevice {
     return .unknown
   }
   
-  public static func isiPhoneX() -> Bool{
+  static func isiPhoneX() -> Bool{
     let type = UIDevice.iPhoneType()
     return type == .iPhoneX || type == .iPhoneXS_Max || type == .iPhoneXR
   }
   
-  public static func isiPhone5() -> Bool{
+  static func isiPhone5() -> Bool{
     return UIDevice.iPhoneType() == .iPhone5
   }
   
-  public static var statusbarHeight: CGFloat {
+  static var statusbarHeight: CGFloat {
     return isiPhoneX() ? 44:20
   }
   
-  public static var statusbarAndNavigationbarHeight: CGFloat {
+  static var statusbarAndNavigationbarHeight: CGFloat {
     return isiPhoneX() ? 88:64
   }
 }

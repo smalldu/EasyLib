@@ -12,16 +12,16 @@ extension UIImage : EazyCompatible{
 
 public extension Auto where Base: UIImage {
   
-  public func original() -> UIImage {
+  func original() -> UIImage {
     return self.base.withRenderingMode(.alwaysOriginal)
   }
   
-  public func template() -> UIImage {
+  func template() -> UIImage {
     return self.base.withRenderingMode(.alwaysTemplate)
   }
   
   //图像比例缩放
-  public func scaleImage(_ img: UIImage,scaleSize: CGFloat)->UIImage{
+  func scaleImage(_ img: UIImage,scaleSize: CGFloat)->UIImage{
     UIGraphicsBeginImageContext(CGSize(width: img.size.width * scaleSize, height: img.size.height * scaleSize))
     img.draw(in: CGRect(x: 0, y: 0, width: CGFloat( Int(img.size.width * scaleSize) + 1 ) , height: img.size.height * scaleSize + 1))
     let scaledImage = UIGraphicsGetImageFromCurrentImageContext()
@@ -30,7 +30,7 @@ public extension Auto where Base: UIImage {
   }
   
   //自定长宽 相当于裁剪分辨率
-  public func reSizeImage(_ toSize: CGSize)->UIImage{
+  func reSizeImage(_ toSize: CGSize)->UIImage{
     UIGraphicsBeginImageContext(toSize)
     self.base.draw(in: CGRect(x: 0, y: 0, width: toSize.width, height: toSize.height))
     let reSizeImage = UIGraphicsGetImageFromCurrentImageContext();
@@ -42,7 +42,7 @@ public extension Auto where Base: UIImage {
   ///
   /// - Parameter width: 指定最大宽度
   /// - Returns: UIImage
-  public func resizeWidthTo(_ width: CGFloat) -> UIImage {
+  func resizeWidthTo(_ width: CGFloat) -> UIImage {
     if width >= base.size.width {
       return self.base
     }

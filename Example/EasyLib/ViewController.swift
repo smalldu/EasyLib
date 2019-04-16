@@ -66,7 +66,7 @@ class ViewController: UIViewController {
       $0.color = .white
       $0.font = .lightOf(12)
       $0.backColor = .black
-      $0.underline = .styleSingle
+      $0.underline = .single
       $0.underlineColor = .red
     }
     

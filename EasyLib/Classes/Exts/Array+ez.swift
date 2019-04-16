@@ -9,7 +9,7 @@ import UIKit
 
 public extension Array {
   
-  public func safeIndex(_ i : Int) -> Element? {
+  func safeIndex(_ i : Int) -> Element? {
     if i < self.count && i >= 0 {
       return self[i]
     } else {
@@ -17,7 +17,7 @@ public extension Array {
     }
   }
   
-  public subscript(input:[Int])->ArraySlice<Element>{
+  subscript(input:[Int])->ArraySlice<Element>{
     get{
       var result = ArraySlice<Element>()
       for i in input{
@@ -35,7 +35,7 @@ public extension Array {
     }
   }
   
-  public subscript(first: Int, second: Int, other: Int...) -> ArraySlice<Element> {
+  subscript(first: Int, second: Int, other: Int...) -> ArraySlice<Element> {
     get{
       var result = ArraySlice<Element>()
       var tmp = other
@@ -59,7 +59,7 @@ public extension Array {
     }
   }
   
-  public mutating func appendItems(_ items:[Element]){
+  mutating func appendItems(_ items:[Element]){
     items.forEach { (t) in
       self.append(t)
     }

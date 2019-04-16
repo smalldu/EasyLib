@@ -18,12 +18,12 @@ fileprivate struct AssociatedKeys{
 
 public extension Auto where Base: UILabel {
   
-  public var style: Style? {
+  var style: Style? {
     set { objc_setAssociatedObject(self.base,&AssociatedKeys.labelStyle, newValue , .OBJC_ASSOCIATION_RETAIN_NONATOMIC) }
     get { return objc_getAssociatedObject(self.base, &AssociatedKeys.labelStyle) as? Style }
   }
   
-  public var text: String? {
+  var text: String? {
     set {
       guard let text = newValue else {
         return
@@ -39,12 +39,12 @@ public extension Auto where Base: UILabel {
 
 public extension Auto where Base: UITextField {
   
-  public var style: Style? {
+  var style: Style? {
     set { objc_setAssociatedObject(self.base,&AssociatedKeys.textFieldStyle, newValue , .OBJC_ASSOCIATION_RETAIN_NONATOMIC) }
     get { return objc_getAssociatedObject(self.base, &AssociatedKeys.textFieldStyle) as? Style }
   }
   
-  public var text: String? {
+  var text: String? {
     set {
       guard let text = newValue else {
         return
@@ -60,12 +60,12 @@ public extension Auto where Base: UITextField {
 
 public extension Auto where Base: UITextView {
   
-  public var style: Style? {
+  var style: Style? {
     set { objc_setAssociatedObject(self.base,&AssociatedKeys.textViewStyle, newValue , .OBJC_ASSOCIATION_RETAIN_NONATOMIC) }
     get { return objc_getAssociatedObject(self.base, &AssociatedKeys.textViewStyle) as? Style }
   }
   
-  public var text: String? {
+  var text: String? {
     set {
       guard let text = newValue else {
         return

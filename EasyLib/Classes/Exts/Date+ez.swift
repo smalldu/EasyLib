@@ -19,7 +19,7 @@ public extension Date{
    
    - returns: 格式化后日期的string类型
    */
-  public func format(_ format: String? = nil) -> String{
+  func format(_ format: String? = nil) -> String{
     let dateFormatter = DateFormatter()
     dateFormatter.dateFormat = format ?? "yyyy-MM-dd"
     return dateFormatter.string(from: self)
@@ -32,7 +32,7 @@ public extension Date{
    
    - returns: date
    */
-  public func nDayslater(_ n: Int)-> Date{
+  func nDayslater(_ n: Int)-> Date{
     return  Date(timeInterval:Double(60*60*24*n), since: self)
   }
   
@@ -41,7 +41,7 @@ public extension Date{
   ///
   /// - Parameter n: n
   /// - Returns: date
-  public func nMonthLater(_ n:Int)->Date? {
+  func nMonthLater(_ n:Int)->Date? {
     let calendar = NSCalendar(calendarIdentifier: NSCalendar.Identifier.gregorian)
     var adcomps = DateComponents()
     adcomps.month = n
@@ -56,7 +56,7 @@ public extension Date{
   ///   - startDate: 开始日期
   ///   - endDate: 结束日期
   /// - Returns: 差
-  public func monthDistance(_ endDate: Date)-> Int?{
+  func monthDistance(_ endDate: Date)-> Int?{
     let calendar = NSCalendar(calendarIdentifier: NSCalendar.Identifier.gregorian)
     let compsMonth = calendar?.components(NSCalendar.Unit.month , from: self, to: endDate , options: NSCalendar.Options.init(rawValue: 0))
     return compsMonth?.month

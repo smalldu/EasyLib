@@ -14,7 +14,7 @@ public protocol EazyCompatible {
 
 
 public extension EazyCompatible {
-  public var ez: Auto<Self> {
+  var ez: Auto<Self> {
     get { return Auto(self) }
     set { }
   }

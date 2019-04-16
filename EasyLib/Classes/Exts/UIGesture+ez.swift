@@ -11,47 +11,47 @@ import UIKit
 
 public extension Auto where Base: UIView {
   
-  public func configTap(_ block: @escaping TapGestureBlock) -> GestureAction<UITapGestureRecognizer> {
+  func configTap(_ block: @escaping TapGestureBlock) -> GestureAction<UITapGestureRecognizer> {
     let tap = EZTapGesture(config: block)
     self.base.addGestureRecognizer(tap)
     return tap.action
   }
   
-  public func taped(_ block: @escaping TapGestureBlock) {
+  func taped(_ block: @escaping TapGestureBlock) {
     let tap = EZTapGesture(block)
     self.base.addGestureRecognizer(tap)
   }
   
-  public func configPan(_ block: @escaping PanGestureBlock) -> GestureAction<UIPanGestureRecognizer> {
+  func configPan(_ block: @escaping PanGestureBlock) -> GestureAction<UIPanGestureRecognizer> {
     let pan = EZPanGesture(config: block)
     self.base.addGestureRecognizer(pan)
     return pan.action
   }
   
-  public func paned(_ block: @escaping PanGestureBlock) {
+  func paned(_ block: @escaping PanGestureBlock) {
     let pan = EZPanGesture(block)
     self.base.addGestureRecognizer(pan)
   }
   
-  public func configLongPress(_ block: @escaping LongPressGestureBlock) -> GestureAction<UILongPressGestureRecognizer> {
+  func configLongPress(_ block: @escaping LongPressGestureBlock) -> GestureAction<UILongPressGestureRecognizer> {
     let longPress = EZLongPressGesture(config: block)
     self.base.addGestureRecognizer(longPress)
     return longPress.action
   }
   
-  public func longPressed(_ block: @escaping LongPressGestureBlock) {
+  func longPressed(_ block: @escaping LongPressGestureBlock) {
     let longPress = EZLongPressGesture(block)
     self.base.addGestureRecognizer(longPress)
   }
   
   
-  public func configSwip(_ block: @escaping SwipGestureBlock) -> GestureAction<UISwipeGestureRecognizer> {
+  func configSwip(_ block: @escaping SwipGestureBlock) -> GestureAction<UISwipeGestureRecognizer> {
     let longPress = EZSwipGesture(config: block)
     self.base.addGestureRecognizer(longPress)
     return longPress.action
   }
   
-  public func swiped(_ block: @escaping SwipGestureBlock) {
+  func swiped(_ block: @escaping SwipGestureBlock) {
     let longPress = EZSwipGesture(block)
     self.base.addGestureRecognizer(longPress)
   }

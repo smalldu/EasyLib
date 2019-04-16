@@ -9,23 +9,23 @@ import UIKit
 
 public extension String {
   
-  public static func ==(lhs: String, rhs: String) -> Bool {
+  static func ==(lhs: String, rhs: String) -> Bool {
     return lhs.compare(rhs, options: .numeric) == .orderedSame
   }
   
-  public static func <(lhs: String, rhs: String) -> Bool {
+  static func <(lhs: String, rhs: String) -> Bool {
     return lhs.compare(rhs, options: .numeric) == .orderedAscending
   }
   
-  public static func <=(lhs: String, rhs: String) -> Bool {
+  static func <=(lhs: String, rhs: String) -> Bool {
     return lhs.compare(rhs, options: .numeric) == .orderedAscending || lhs.compare(rhs, options: .numeric) == .orderedSame
   }
   
-  public static func >(lhs: String, rhs: String) -> Bool {
+  static func >(lhs: String, rhs: String) -> Bool {
     return lhs.compare(rhs, options: .numeric) == .orderedDescending
   }
   
-  public static func >=(lhs: String, rhs: String) -> Bool {
+  static func >=(lhs: String, rhs: String) -> Bool {
     return lhs.compare(rhs, options: .numeric) == .orderedDescending || lhs.compare(rhs, options: .numeric) == .orderedSame
   }
   

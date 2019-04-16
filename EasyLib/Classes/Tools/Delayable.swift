@@ -13,7 +13,7 @@ public protocol Delayable {
 
 public extension Delayable{
   @discardableResult
-  public func delay(_ time:TimeInterval, task:@escaping ()->()) ->  Task? {
+  func delay(_ time:TimeInterval, task:@escaping ()->()) ->  Task? {
     
     func dispatch_later(_ block: (()->())?) {
       DispatchQueue.main.asyncAfter(
@@ -37,7 +37,7 @@ public extension Delayable{
     return result
   }
   
-  public func cancel(_ task:Task?) {
+  func cancel(_ task:Task?) {
     task?(true)
   }
 }
