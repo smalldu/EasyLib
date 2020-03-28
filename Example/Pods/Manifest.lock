@@ -1,5 +1,5 @@
 PODS:
-  - EasyLib (0.2.5)
+  - EasyLib (0.2.6)
 
 DEPENDENCIES:
   - EasyLib (from `../`)
@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  EasyLib: 38b59d56cc3e8f78811ef2bd1a127d0273270a3d
+  EasyLib: c96d9237c9e3798aa795cc1baf333d2c4dc68103
 
 PODFILE CHECKSUM: 3e4fc2ec57a5bbdcc0c823b0780ed76841e22bee
 
-COCOAPODS: 1.7.5
+COCOAPODS: 1.9.1

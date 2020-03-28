@@ -8,16 +8,16 @@
 
 import UIKit
 
-enum PresentionDirection{
+public enum PresentionDirection {
   case left
   case top
   case right
   case bottom
 }
 
-class SlideInPresentationManager: NSObject {
-  var direction = PresentionDirection.left
-  var isMoveTogher = false
+public class SlideInPresentationManager: NSObject {
+  public var direction = PresentionDirection.left
+  public var isMoveTogher = false
 }
 
 
@@ -25,16 +25,16 @@ class SlideInPresentationManager: NSObject {
 
 extension SlideInPresentationManager: UIViewControllerTransitioningDelegate {
   
-  func presentationController(forPresented presented: UIViewController, presenting: UIViewController?, source: UIViewController) -> UIPresentationController? {
+  public func presentationController(forPresented presented: UIViewController, presenting: UIViewController?, source: UIViewController) -> UIPresentationController? {
     let presentController = SlideInPresentationController(presentedViewController: presented, presenting: presenting, direction: direction)
     return presentController
   }
   
-  func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+  public func animationController(forPresented presented: UIViewController, presenting: UIViewController, source: UIViewController) -> UIViewControllerAnimatedTransitioning? {
     return SlideInPresentationAnimator(direction: direction, isPresentation: true , isMoveTogher:isMoveTogher)
   }
   
-  func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
+  public func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
     return SlideInPresentationAnimator(direction: direction, isPresentation: false , isMoveTogher:isMoveTogher)
   }
   

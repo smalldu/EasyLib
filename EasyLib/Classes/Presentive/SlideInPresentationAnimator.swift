@@ -9,7 +9,7 @@
 import UIKit
 
 class SlideInPresentationAnimator: NSObject {
-  fileprivate var direction: PresentionDirection
+  private var direction: PresentionDirection
   let isPresentation: Bool
   let isMoveTogher: Bool
   init(direction: PresentionDirection, isPresentation: Bool,isMoveTogher:Bool) {
@@ -18,7 +18,6 @@ class SlideInPresentationAnimator: NSObject {
     self.isPresentation = isPresentation
     super.init()
   }
-  
 }
 
 
