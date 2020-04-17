@@ -18,11 +18,7 @@ class PresentiveCell: UITableViewCell {
     didSet{
       selectionStyle = .none
       contentLabel.font = UIFont.regularOf(12)
-      if #available(iOS 13, *) {
-        contentLabel.textColor = UIColor.label
-      }else{
-        contentLabel.textColor = UIColor.cb2b2b2
-      }
+      contentLabel.textColor = UIColor.cb2b2b2
       contentLabel.text = title
     }
   }
@@ -31,11 +27,7 @@ class PresentiveCell: UITableViewCell {
     didSet{
       selectionStyle = .default
       contentLabel.font = UIFont.regularOf(15)
-      if #available(iOS 13, *) {
-        contentLabel.textColor = UIColor.label
-      }else{
-        contentLabel.textColor = UIColor.c333333
-      }
+      contentLabel.textColor = UIColor.c333333
       contentLabel.text = content
     }
   }
