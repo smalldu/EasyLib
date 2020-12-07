@@ -28,9 +28,9 @@ public extension UIDevice {
         return .iPhone6
       case 2208:
         return .iPhone6p
-      case 2436:
+      case 2436,2532,2340:
         return .iPhoneX
-      case 2688:
+      case 2688,2778:
         return .iPhoneXS_Max
       case 1792:
         return .iPhoneXR

@@ -37,16 +37,56 @@ public extension Date{
   }
   
   
-  /// n个月以后
+ /// n个月以后
   ///
   /// - Parameter n: n
   /// - Returns: date
-  func nMonthLater(_ n:Int)->Date? {
-    let calendar = NSCalendar(calendarIdentifier: NSCalendar.Identifier.gregorian)
-    var adcomps = DateComponents()
-    adcomps.month = n
-    adcomps.day = -1
-    return calendar?.date(byAdding: adcomps, to: self , options: NSCalendar.Options.init(rawValue: 0))
+  func nMonthLater(_ n: Int)->Date? {
+    let calendar = NSCalendar.current
+    let comp = calendar.dateComponents([.day,.month,.year], from: self)
+    if let month = comp.month , let year = comp.year , let day = comp.day {
+      var nextMonth = 0
+      var nextYear = 0
+      var nextDay = 0
+      let mon = (month + n) % 12
+      if mon == 0 {
+        nextMonth = 12
+        let y = (month + n) / 12
+        if y - 1 > 0 {
+          nextYear = year + y - 1
+        }else{
+          nextYear = year
+        }
+      }else{
+        nextMonth = mon
+        let y = (month + n) / 12
+        nextYear = year + y
+      }
+      // 如果是1号 月减1
+      if day == 1 {
+        if nextMonth == 1 {
+          nextMonth = 12
+          nextYear -= 1
+        }else{
+          nextMonth -= 1
+        }
+      }
+      if let yearDate = calendar.date(bySetting: .year , value: nextYear, of: self) ,
+        let monthDate = calendar.date(bySetting: .month, value: nextMonth, of: yearDate) , let day = comp.day ,
+        let numberOfDaysInMonth = calendar.range(of: .day, in: .month, for: monthDate)?.count {
+        if day == 1 {
+          nextDay = numberOfDaysInMonth
+        }else if day > numberOfDaysInMonth {
+          nextDay = numberOfDaysInMonth
+        }else if day <= numberOfDaysInMonth{
+          nextDay = day - 1
+        }
+        if let date = calendar.date(bySetting: .day, value: nextDay, of: monthDate) {
+          return date
+        }
+      }
+    }
+    return nil
   }
   
   
