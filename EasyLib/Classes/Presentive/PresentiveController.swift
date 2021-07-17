@@ -81,14 +81,39 @@ extension PresentiveController {
     if sections.contains(.title) {
       height += titleHeight
     }
+    let statusBarHeight = UIApplication.shared.statusBarFrame.size.height
+    if statusBarHeight  >= 44 {
+      height += 34
+    }
     preferredContentSize = CGSize(width: self.view.bounds.size.width, height: height)
-    
+
     view.addSubview(tableView)
-    tableView.frame = view.bounds
     tableView.separatorInset = UIEdgeInsets(top: 0, left:0, bottom: 0, right: 0)
     tableView.tableFooterView = UIView(frame: CGRect.zero)
     tableView.isScrollEnabled = false
     tableView.separatorColor = UIColor(white: 0.8, alpha: 0.5)
+    tableView.translatesAutoresizingMaskIntoConstraints = false
+    
+    let c1 = NSLayoutConstraint(item: tableView, attribute: .top, relatedBy: .equal, toItem: view.safeAreaLayoutGuide, attribute: .top, multiplier: 1, constant: 0)
+    view.addConstraint(c1)
+    let c2 = NSLayoutConstraint(item: tableView, attribute: .bottom, relatedBy: .equal, toItem: view.safeAreaLayoutGuide, attribute: .bottom, multiplier: 1, constant: 0)
+    view.addConstraint(c2)
+    let c3 = NSLayoutConstraint(item: tableView, attribute: .left, relatedBy: .equal, toItem: view.safeAreaLayoutGuide, attribute: .left, multiplier: 1, constant: 0)
+    view.addConstraint(c3)
+    let c4 = NSLayoutConstraint(item: tableView, attribute: .right, relatedBy: .equal, toItem: view.safeAreaLayoutGuide, attribute: .right, multiplier: 1, constant: 0)
+    view.addConstraint(c4)
+    
+    let btmView = UIView()
+    btmView.translatesAutoresizingMaskIntoConstraints = false
+    btmView.backgroundColor = .white
+    view.addSubview(btmView)
+    
+    view.addConstraints([
+      NSLayoutConstraint(item: btmView, attribute: .right, relatedBy: .equal, toItem: view.safeAreaLayoutGuide, attribute: .right, multiplier: 1, constant: 0),
+      NSLayoutConstraint(item: btmView, attribute: .left, relatedBy: .equal, toItem: view.safeAreaLayoutGuide, attribute: .left, multiplier: 1, constant: 0),
+      NSLayoutConstraint(item: btmView, attribute: .bottom, relatedBy: .equal, toItem: view, attribute: .bottom, multiplier: 1, constant: 0),
+      NSLayoutConstraint(item: btmView, attribute: .top, relatedBy: .equal, toItem: tableView, attribute: .bottom, multiplier: 1, constant: 0)
+    ])
     
     let bundle = Bundle(for: type(of: self))
     let path = bundle.path(forResource: "EasyLib", ofType: "bundle")
@@ -166,7 +191,7 @@ extension PresentiveController: UITableViewDataSource,UITableViewDelegate {
     switch sections[ section ] {
     case .cancel:
       let v = UIView()
-      v.backgroundColor = UIColor(white: 0.5, alpha: 0.25)
+      v.backgroundColor = UIColor(hex: 0xf7f8fa)
       return v
     default:
       return nil
